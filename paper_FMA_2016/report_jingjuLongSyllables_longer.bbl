@@ -1,0 +1,111 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Anguera, Luque \& Gracia}{Anguera
+  et~al.}{2014}]{anguera2014audio}
+Anguera, X., Luque, J., \& Gracia, C. (2014).
+\newblock Audio-to-text alignment for speech recognition with very limited
+  resources.
+\newblock In {\em INTERSPEECH}, (pp.\ 1405--1409).
+
+\bibitem[\protect\citeauthoryear{Chen, Shen, Srinivasamurthy \& Chordia}{Chen
+  et~al.}{2012}]{chen2012chord}
+Chen, R., Shen, W., Srinivasamurthy, A., \& Chordia, P. (2012).
+\newblock Chord recognition using duration-explicit hidden markov models.
+\newblock In {\em Proceedings of the 13th International Society for Music
+  Information Retrieval Conference}, (pp.\ 445--450).
+
+\bibitem[\protect\citeauthoryear{Duanmu}{Duanmu}{2000}]{duanmu2000phonology}
+Duanmu, S. (2000).
+\newblock {\em The Phonology of Standard Chinese}.
+\newblock Clarendon Studies in Criminology. Oxford University Press.
+
+\bibitem[\protect\citeauthoryear{Dzhambazov \& Serra}{Dzhambazov \&
+  Serra}{2015}]{Dzhambazov}
+Dzhambazov, G. \& Serra, X. (2015).
+\newblock Modeling of phoneme durations for alignment between polyphonic audio
+  and lyrics.
+\newblock In {\em Sound and Music Computing Conference}, Maynooth, Ireland.
+
+\bibitem[\protect\citeauthoryear{Fujihara \& Goto}{Fujihara \&
+  Goto}{2012}]{fujihara2012lyrics}
+Fujihara, H. \& Goto, M. (2012).
+\newblock Lyrics-to-audio alignment and its application.
+\newblock {\em Multimodal Music Processing}, {\em 3}, 23--36.
+
+\bibitem[\protect\citeauthoryear{Fujihara, Goto, Ogata \& Okuno}{Fujihara
+  et~al.}{2011}]{fujihara2011lyricsynchronizer}
+Fujihara, H., Goto, M., Ogata, J., \& Okuno, H.~G. (2011).
+\newblock Lyricsynchronizer: Automatic synchronization system between musical
+  audio signals and lyrics.
+\newblock {\em IEEE Journal of Selected Topics in Signal Processing}, {\em
+  5\/}(6), 1252--1261.
+
+\bibitem[\protect\citeauthoryear{Hansen}{Hansen}{2012}]{hansen2012recognition}
+Hansen, J.~K. (2012).
+\newblock Recognition of phonemes in a-cappella recordings using temporal
+  patterns and mel frequency cepstral coefficients.
+\newblock In {\em Proceedings of the 9th Sound and Music Computing Conference},
+  (pp.\ 494--499)., Copenhagen, Denmark.
+
+\bibitem[\protect\citeauthoryear{Kruspe}{Kruspe}{2014}]{kruspekeyword}
+Kruspe, A.~M. (2014).
+\newblock Keyword spotting in a-capella singing.
+\newblock In {\em Proceedings of the 15th International Society for Music
+  Information Retrieval Conference}, (pp.\ 271--276)., Taipei, Taiwan.
+
+\bibitem[\protect\citeauthoryear{Kruspe}{Kruspe}{2015}]{kruspe2015keyword}
+Kruspe, A.~M. (2015).
+\newblock Keyword spotting in singing with duration-modeled hmms.
+\newblock In {\em Signal Processing Conference (EUSIPCO), 2015 23rd European},
+  (pp.\ 1291--1295). IEEE.
+
+\bibitem[\protect\citeauthoryear{Mesaros \& Virtanen}{Mesaros \&
+  Virtanen}{2008}]{Mesaros96automaticalignment}
+Mesaros, A. \& Virtanen, T. (2008).
+\newblock Automatic alignment of music audio and lyrics.
+\newblock In {\em Proceedings of the 11th Int. Conference on Digital Audio
+  Effects (DAFx-08)}.
+
+\bibitem[\protect\citeauthoryear{Rabiner}{Rabiner}{1989}]{rabiner1989tutorial}
+Rabiner, L. (1989).
+\newblock A tutorial on hidden {Markov} models and selected applications in
+  speech recognition.
+\newblock {\em Proceedings of the IEEE}, {\em 77\/}(2), 257--286.
+
+\bibitem[\protect\citeauthoryear{Repetto \& Serra}{Repetto \&
+  Serra}{2014}]{repetto2014creating}
+Repetto, R.~C. \& Serra, X. (2014).
+\newblock Creating a corpus of jingju (beijing opera) music and possibilities
+  for melodic analysis.
+\newblock In {\em Proceedings of the 15th International Society for Music
+  Information Retrieval Conference}, (pp.\ 313--318).
+
+\bibitem[\protect\citeauthoryear{Wang, Kan, Nwe, Shenoy \& Yin}{Wang
+  et~al.}{2004}]{wang2004lyrically}
+Wang, Y., Kan, M.-Y., Nwe, T.~L., Shenoy, A., \& Yin, J. (2004).
+\newblock Lyrically: automatic synchronization of acoustic musical signals and
+  textual lyrics.
+\newblock In {\em Proceedings of the 12th annual ACM international conference
+  on Multimedia}, (pp.\ 212--219). ACM.
+
+\bibitem[\protect\citeauthoryear{Wichmann}{Wichmann}{1991}]{wichmann1991listening}
+Wichmann, E. (1991).
+\newblock {\em Listening to theatre: the aural dimension of Beijing opera}.
+\newblock University of Hawaii Press.
+
+\bibitem[\protect\citeauthoryear{Wong, Szeto \& Wong}{Wong
+  et~al.}{2007}]{wong2007automatic}
+Wong, C.~H., Szeto, W.~M., \& Wong, K.~H. (2007).
+\newblock Automatic lyrics alignment for cantonese popular music.
+\newblock {\em Multimedia Systems}, {\em 12\/}(4-5), 307--323.
+
+\bibitem[\protect\citeauthoryear{Young}{Young}{1993}]{young1993htk}
+Young, S.~J. (1993).
+\newblock {\em The HTK hidden Markov model toolkit: Design and philosophy}.
+
+\bibitem[\protect\citeauthoryear{Yu}{Yu}{2010}]{yu2010hidden}
+Yu, S.-Z. (2010).
+\newblock Hidden semi-{Markov} models.
+\newblock {\em Artificial Intelligence}, {\em 174\/}(2), 215--243.
+
+\end{thebibliography}

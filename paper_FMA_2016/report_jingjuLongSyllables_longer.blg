@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report_jingjuLongSyllables_longer.aux
+The style file: newapa.bst
+Illegal, another \bibstyle command---line 43 of file report_jingjuLongSyllables_longer.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Database file #1: JingjuAlignment.bib
+Database file #2: /Users/joro/Documents/Phd/UPF/voxforge/myScripts/AlignmentDuration/ISMIR_noteOnsets/JabRefOnsetDetectionFullReferences.bib
+Repeated entry---line 36 of file /Users/joro/Documents/Phd/UPF/voxforge/myScripts/AlignmentDuration/ISMIR_noteOnsets/JabRefOnsetDetectionFullReferences.bib
+ : @article{fujihara2012lyrics
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 808 of file /Users/joro/Documents/Phd/UPF/voxforge/myScripts/AlignmentDuration/ISMIR_noteOnsets/JabRefOnsetDetectionFullReferences.bib
+ : @inproceedings{wang2004lyrically
+ :                                 ,
+I'm skipping whatever remains of this entry
+Warning--empty publisher in young1993htk
+You've used 17 entries,
+            2708 wiz_defined-function locations,
+            695 strings with 7634 characters,
+and the built_in function-call counts, 8307 in all, are:
+= -- 787
+> -- 296
+< -- 19
++ -- 111
+- -- 105
+* -- 699
+:= -- 1457
+add.period$ -- 53
+call.type$ -- 17
+change.case$ -- 134
+chr.to.int$ -- 17
+cite$ -- 18
+duplicate$ -- 371
+empty$ -- 600
+format.name$ -- 130
+if$ -- 1626
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 20
+newline$ -- 87
+num.names$ -- 68
+pop$ -- 136
+preamble$ -- 1
+purify$ -- 154
+quote$ -- 0
+skip$ -- 283
+stack$ -- 0
+substring$ -- 588
+swap$ -- 122
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 96
+warning$ -- 1
+while$ -- 81
+width$ -- 0
+write$ -- 222
+(There were 3 error messages)
