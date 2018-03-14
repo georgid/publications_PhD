@@ -1,0 +1,238 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 14.047392290249434 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phrases" 
+        xmin = 0 
+        xmax = 14.047392290249434 
+        intervals: size = 8 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.799485243770329 
+            text = "" 
+        intervals [2]:
+            xmin = 0.799485243770329 
+            xmax = 3.4682324149683663 
+            text = "kanatIr" 
+        intervals [3]:
+            xmin = 3.4682324149683663 
+            xmax = 5.038396088352078 
+            text = "ruhumu" 
+        intervals [4]:
+            xmin = 5.038396088352078 
+            xmax = 8.096128196553462 
+            text = "mazide" 
+        intervals [5]:
+            xmin = 8.096128196553462 
+            xmax = 9.132641471140095 
+            text = "kalan " 
+        intervals [6]:
+            xmin = 9.132641471140095 
+            xmax = 9.450779208884507 
+            text = "" 
+        intervals [7]:
+            xmin = 9.450779208884507 
+            xmax = 13.23764453880993 
+            text = "hatIralar" 
+        intervals [8]:
+            xmin = 13.23764453880993 
+            xmax = 14.047392290249434 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 14.047392290249434 
+        intervals: size = 8 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.22 
+            text = "" 
+        intervals [2]:
+            xmin = 0.22 
+            xmax = 2.34 
+            text = "kanatIr" 
+        intervals [3]:
+            xmin = 2.34 
+            xmax = 5.25 
+            text = "ruhumu" 
+        intervals [4]:
+            xmin = 5.25 
+            xmax = 5.34 
+            text = "sil" 
+        intervals [5]:
+            xmin = 5.34 
+            xmax = 8.14 
+            text = "mazide" 
+        intervals [6]:
+            xmin = 8.14 
+            xmax = 9.14 
+            text = "kalan" 
+        intervals [7]:
+            xmin = 9.14 
+            xmax = 13.25 
+            text = "hatIralar" 
+        intervals [8]:
+            xmin = 13.25 
+            xmax = 14.047392290249434 
+            text = "sil" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 14.047392290249434 
+        intervals: size = 37 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.22 
+            text = "" 
+        intervals [2]:
+            xmin = 0.22 
+            xmax = 0.33 
+            text = "KK" 
+        intervals [3]:
+            xmin = 0.33 
+            xmax = 0.38 
+            text = "AA" 
+        intervals [4]:
+            xmin = 0.38 
+            xmax = 0.88 
+            text = "NN" 
+        intervals [5]:
+            xmin = 0.88 
+            xmax = 1.4 
+            text = "AA" 
+        intervals [6]:
+            xmin = 1.4 
+            xmax = 1.43 
+            text = "T" 
+        intervals [7]:
+            xmin = 1.43 
+            xmax = 2.12 
+            text = "I" 
+        intervals [8]:
+            xmin = 2.12 
+            xmax = 2.34 
+            text = "RR" 
+        intervals [9]:
+            xmin = 2.34 
+            xmax = 3.7800001 
+            text = "RR" 
+        intervals [10]:
+            xmin = 3.7800001 
+            xmax = 4.5200001 
+            text = "U" 
+        intervals [11]:
+            xmin = 4.5200001 
+            xmax = 4.5500001 
+            text = "fric" 
+        intervals [12]:
+            xmin = 4.5500001 
+            xmax = 5.0100001 
+            text = "U" 
+        intervals [13]:
+            xmin = 5.0100001 
+            xmax = 5.1100001 
+            text = "M" 
+        intervals [14]:
+            xmin = 5.1100001 
+            xmax = 5.25 
+            text = "U" 
+        intervals [15]:
+            xmin = 5.25 
+            xmax = 5.2500001 
+            text = "" 
+        intervals [16]:
+            xmin = 5.2500001 
+            xmax = 5.34 
+            text = "sil" 
+        intervals [17]:
+            xmin = 5.34 
+            xmax = 5.37 
+            text = "M" 
+        intervals [18]:
+            xmin = 5.37 
+            xmax = 5.78 
+            text = "AA" 
+        intervals [19]:
+            xmin = 5.78 
+            xmax = 5.88 
+            text = "fric" 
+        intervals [20]:
+            xmin = 5.88 
+            xmax = 7.78 
+            text = "IY" 
+        intervals [21]:
+            xmin = 7.78 
+            xmax = 7.84 
+            text = "D" 
+        intervals [22]:
+            xmin = 7.84 
+            xmax = 8.14 
+            text = "E" 
+        intervals [23]:
+            xmin = 8.14 
+            xmax = 8.19 
+            text = "KK" 
+        intervals [24]:
+            xmin = 8.19 
+            xmax = 8.95 
+            text = "AA" 
+        intervals [25]:
+            xmin = 8.95 
+            xmax = 8.99 
+            text = "LL" 
+        intervals [26]:
+            xmin = 8.99 
+            xmax = 9.06 
+            text = "AA" 
+        intervals [27]:
+            xmin = 9.06 
+            xmax = 9.14 
+            text = "NN" 
+        intervals [28]:
+            xmin = 9.14 
+            xmax = 9.6 
+            text = "fric" 
+        intervals [29]:
+            xmin = 9.6 
+            xmax = 9.71 
+            text = "AA" 
+        intervals [30]:
+            xmin = 9.71 
+            xmax = 9.77 
+            text = "T" 
+        intervals [31]:
+            xmin = 9.77 
+            xmax = 12.98 
+            text = "I" 
+        intervals [32]:
+            xmin = 12.98 
+            xmax = 13.01 
+            text = "RR" 
+        intervals [33]:
+            xmin = 13.01 
+            xmax = 13.04 
+            text = "AA" 
+        intervals [34]:
+            xmin = 13.04 
+            xmax = 13.07 
+            text = "LL" 
+        intervals [35]:
+            xmin = 13.07 
+            xmax = 13.1 
+            text = "AA" 
+        intervals [36]:
+            xmin = 13.1 
+            xmax = 13.25 
+            text = "RR" 
+        intervals [37]:
+            xmin = 13.25 
+            xmax = 14.047392290249434 
+            text = "sil" 

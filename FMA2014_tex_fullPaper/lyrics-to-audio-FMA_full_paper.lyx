@@ -1,0 +1,2130 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+% -----------------------------------------------
+% Template for FMA2014
+% (based on ISMIR 2010 Template)
+% -----------------------------------------------
+%
+% To compile run:
+% pdflatex fma2014template.tex
+% bibtex fma2014template
+% pdflatex fma2014template.tex (probably twice)
+%
+
+
+\usepackage{fma2014}
+
+% Title.
+% ------
+\title{Automatic lyrics-to-audio alignment in classical turkish music}
+
+% Single address
+% To use with only one author or several with the _same address_
+% ---------------
+%\oneauthor
+% {Author}
+% {Affiliation \\ {\tt {author}@fma.edu}}
+%
+\oneauthor
+ {Georgi Dzhambazov, Sertan {\c S}ent\"urk, Xavier Serra}
+ {Music Technology Group, Universitat Pompeu Fabra, Barcelona, Spain \\ {\tt \{georgi.dzhambazov,sertan.senturk,xavier.serra\}@upf.edu}}
+%
+% Two addresses
+% --------------
+%\twoauthors
+%  {First author, Second Author} {Affiliation1 \\ {\tt author1@fma.edu, author2@afm.edu}}
+%  {Third author} {Affiliation2 \\ {\tt author3@fma.edu}}
+%
+% Three addresses
+% --------------
+%\threeauthors
+%  {First author} {Affiliation1 \\ {\tt author1@fma.edu}}
+%  {Second author} {Affiliation2 \\ {\tt author2@fma.edu}}
+%  {Third author} {Affiliation3 \\ {\tt author3@fma.edu}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+We apply a lyrics-to-audio alignment state-of-the-art approach to polyphonic
+ pieces from classical Turkish repertoire.
+ 
+\size normal
+\color black
+A phonetic recognizer is employed, whereby each phoneme is assigned a hidden
+ Markov model (HMM).
+ Initially trained on speech, the models are adapted on singing voice to
+ match the acoustic characteristics of the test dataset.
+ Being the first study on lyrics-to-audio alignment applied on Turkish music,
+ it could serve as a baseline for singing material with similar musical
+ characteristics.
+ As part of this work a dataset of
+\size default
+\color inherit
+ recordings from
+\size normal
+\color black
+ the classical music tradition is compiled.
+ Experiments, conducted separately for male and female singers, show that
+ female singing is aligned more accurately.
+ 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Lyrics are one of the most important musical components of vocal music.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+They convey a story and help create an impression of the song.
+\end_layout
+
+\end_inset
+
+ When a performance is heard, most listeners will follow the lyrics of the
+ main vocal melody.
+ From this perspective, the automatic synchronization between lyrics and
+ music poses a user-demanded research question.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ It is applicable to tasks such as automatic karaoke generation, keyword
+ spotting in singing or the automatic generation of subtitles for music
+ videos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By applying a lyrics-to-audio alignment state-of-the-art approach to classical
+ Turkish songs, we aim to outline the research challenges, raised by the
+ musical aspects peculiar to this music tradition.
+ To this end we compile a dedicated evaluation corpus.
+ This work is performed in the context of the CompMusic project 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "CompMusic2276"
+
+\end_inset
+
+, which aims to analyze non-western music traditions in a culture-specific
+ manner.
+ In this respect, the corpus is built as well with the intention to be useful
+ for further music retrieval tasks for the Turkish tradition.
+\end_layout
+
+\begin_layout Section
+Elements of classical music of Turkey
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ - the scope of this study - is a vocal form in the classical repertoire.
+ Typical for it is that vocal and accompanying instruments follow the same
+ melodic contour in their corresponding registers with slight melodic variations.
+ However, the vocal line has usually melodic predominance.
+ This musical interaction is termed heterophony.
+\end_layout
+
+\begin_layout Standard
+Additionally, the
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ form adheres to a well-defined verse-refrain-like structure: a 
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ contains 
+\emph on
+zemin
+\emph default
+ (verse), 
+\emph on
+nakarat
+\emph default
+ (refrain), 
+\emph on
+meyan
+\emph default
+ (second verse), 
+\emph on
+nakarat
+\emph default
+ (refrain) sections, which are preceded by 
+\emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+arana{
+\backslash
+u g}me
+\end_layout
+
+\end_inset
+
+
+\emph default
+ (an instrumental interlude) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ederer2011theory"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Concerning language, unlike modern Turkish, Ottoman Turkish is characterized
+ by more loanwords from Arabic and Persian origin.
+ The lyrics language for the 
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ compositions in our evaluation dataset spans both modern and Ottoman Turkish.
+ The Turkish phonology comprises 38 distinctive phonetic sounds, 8 of which
+ are vowels.
+ There are no diphthongs, and when vowels come together, they retain their
+ individual sounding.
+ Lengthening of vowels is realized by a non-pronounced character 
+\emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+u g}
+\end_layout
+
+\end_inset
+
+.
+ 
+\emph default
+However vowel length has a negligible importance in sung Turkish.
+\end_layout
+
+\begin_layout Standard
+In classical Turkish singing an expressive effect occurs frequently: When
+ performing vibrato, singers tend to alternate between the original vowel
+ and another helper one, simultaneously to alternating the pitch.
+ 
+\end_layout
+
+\begin_layout Section
+Related work
+\end_layout
+
+\begin_layout Standard
+To date most of the studies of singing voice in general and the automatic
+ lyrics-to-audio alignment in particular are focused on western polyphonic
+ popular music.
+ Many approaches exploit phonetic acoustic features.
+\end_layout
+
+\begin_layout Standard
+An example of such a system 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fujihara2011lyricsynchronizer"
+
+\end_inset
+
+ relies on a forced alignment scheme and was tested on Japanese popular
+ music.
+ Since the forced alignment technique was originally developed to carry
+ out the alignment between clean speech and text, accompanying instruments
+ and non-vocal sections deteriorate the alignment accuracy.
+ To address this issue, the authors perform 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+several preprocessing steps: Firstly, the waveform of the predominant melody
+ is segregated from the polyphonic signal.
+ Then it is classified into vocal and non-vocal sections.
+ 
+\end_layout
+
+\end_inset
+
+automatic segregation of the vocal line and the alignment is run using phonetic
+ features extracted from the vocal-only signal.
+\end_layout
+
+\begin_layout Standard
+A diametrically different approach is to deploy external information sources.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "muller2007lyrics"
+
+\end_inset
+
+ uses MIDI files, which are manually synchronized to lyrics.
+ By performing mapping of timestamps between an audio recording and a MIDI
+ version of the composition, lyrics are implicitly aligned to the audio.
+\end_layout
+
+\begin_layout Section
+Method
+\end_layout
+
+\begin_layout Standard
+Combining aspects of these two methods, in this work we develop a system
+ for the automatic synchronization between vocal
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ recordings and their lyrics.
+ Similar to the approach of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fujihara2011lyricsynchronizer"
+
+\end_inset
+
+ we train a hidden Markov model (HMM) for each phoneme, present in Turkish
+ language.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename poster/Alignment_for_poster.eps
+	width 85page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Training steps (on the left) and alignment process (on the right)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Furthermore, we exploit a lyrics representation, for which sections are
+ labeled.
+ Songs are segmented into structural parts through an external module, which
+ links sections from the musical score to temporal anchors in the audio
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "senturk2877"
+
+\end_inset
+
+.
+ Using a Viterbi forced alignment the system aligns in a non-linear way
+ the extracted phonetic features to a network of the trained phoneme models.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Diagram"
+
+\end_inset
+
+ gives an overview of the layout of the system.
+\end_layout
+
+\begin_layout Subsection
+Training 
+\end_layout
+
+\begin_layout Subsubsection
+Training a speech model
+\end_layout
+
+\begin_layout Standard
+In the absence of annotated data of singing phonemes, we train mono-phone
+ models on a big corpus of annotated Turkish speech.
+ Later, we adapt the speech models to match the acoustic characteristics
+ of clean singing voice using a small singing dataset (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Diagram"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The acoustic properties (most importantly the formant frequencies) of spoken
+ phonemes can be induced by the spectral envelope of speech.
+ To this end, we utilize the first 12 mel-frequency cepstral coefficients
+ (MFCCs) and their difference to the previous time instant.
+\end_layout
+
+\begin_layout Standard
+A 3-state HMM model for each of 38 Turkish phonemes is trained, plus a silent
+ pause model.
+ For each state a 10-mixture Gaussian distribution is fitted on the feature
+ vector.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+IMPL: The log probability of the training model after step 7 - fixing the
+ silent model - is -6.180351e+01 (kept in logs/Step7_HERest_hmm7.log)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+IMPL: see readme.adapration.sh
+\end_layout
+
+\begin_layout Plain Layout
+All training output is in dir: MAIN_TRAIN_DIR=/Users/joro/Documents/Phd/UPF/METU
+data/ TRAIN_OUTPUT=$MAIN_TRAIN_DIR/model_output 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Adaptation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Compared to speech, singing voice possesses different acoustic characteristics.
+ For example, the pitch of singing voice pertains to the melodic line in
+ the song, whereas no such dependence holds for speech prosody.
+ as well: the fluctuation of fundamental frequency (F0) and loudness for
+ a given singer vary more, compared to when she is speaking.
+ TODO: here add from MESAROS thesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+The idea of adaptation comes from speaker adaptation and aims to transform
+ the acoustic space of speaker-independent phoneme models towards the acoustic
+ characteristics of a particular speaker.
+ This ensures that after adaptation each state of a phoneme model is more
+ likely to generate the corresponding phoneme when being sung.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mesaros96automaticalignment"
+
+\end_inset
+
+ have proposed to apply an adaptation technique for speaker-dependent speech
+ modeling.
+ 
+\color black
+The Maximum a posteriori (MAP) transform - applied as well in this work
+ - shifts the mean and variance components of the Gaussians of the speech
+ model towards the acoustic characteristics of the singing voice.
+ An advantage of the MAP transform compared to other adaptation techniques
+ is that it allows the manipulation of each phoneme model independently.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+In singing the articulatory characteristics of unvoiced consonants do not
+ vary significantly from these in speech.
+ This is because unvoiced consonants do not bear any melodic line.
+ For this reason we adapted only the vowels and voiced consonants.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+IMPL: 
+\end_layout
+
+\begin_layout Plain Layout
+Reestimation complete - average log prob per frame = -6.209968e+01 (61862
+ frames)
+\end_layout
+
+\begin_layout Plain Layout
+HERest output is stored in /Users/joro/Documents/Phd/UPF/METUdata//model_output/
+log
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Preprocessing steps
+\end_layout
+
+\begin_layout Subsubsection
+Section Linking
+\end_layout
+
+\begin_layout Standard
+In the
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ form each vocal segment is associated with a section (e.g.
+ 
+\emph on
+nakarat
+\emph default
+).
+ Furthermore, a given performance of a
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ composition typically contains section repetitions or omissions, which
+ are not indicated in the score.
+ Thus, for each audio recording, prior to alignment, we utilize a method
+ for linking score sections to their beginning and ending timestamps 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "senturk2877"
+
+\end_inset
+
+ (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Diagram"
+
+\end_inset
+
+).
+ Non-vocal 
+\emph on
+aranağme
+\emph default
+ sections are discarded.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% parts in the audio,  % It generates a synthetic pitch contour from the
+ score, extracts main pitch contour from the audio and matches the two melodic
+ representations.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%% TODO: Accuracy of the section linking part is: Have in mind this as input
+ to our system.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To each segmented vocal section we assign the corresponding lyrical strophe
+ automatically, because lyrics syllables are manually anchored to musical
+ notes in the score.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement !h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename spectrogramOriginalWithLyrics.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename spectrogramSynthesisWithLyrics.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A snippet from the test dataset: spectrum of original audio (above) and
+ after re-synthesis (below)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "synthesisSpectrum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Predominant vocal detection
+\end_layout
+
+\begin_layout Standard
+After section linking a melody extraction algorithm is applied 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "salamon2012melody"
+
+\end_inset
+
+.
+ It extracts the contour of the predominant melodic source and generates
+ time series of pitch values.
+ It performs in the same time a dominant source detection: it returns pitch
+ values of zero for regions with no dominant melody.
+\end_layout
+
+\begin_layout Subparagraph*
+Re-synthesis
+\end_layout
+
+\begin_layout Standard
+Using a harmonic model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Serra89asystem"
+
+\end_inset
+
+, based on the extracted pitch series, we re-synthesize the spectral components
+ corresponding to the first 30 harmonic partials of the singing voice.
+ This results ideally in a vocal line, with no audible instruments.
+ However, some spectral artifacts from accompanying instruments are inevitable,
+ because they follow in parallel the melodic line of the voice.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+model of fricatives: fric 
+\end_layout
+
+\end_inset
+
+A side effect of the synthesis is that non-voiced consonants are not re-synthesi
+zed, which leaves regions of silence (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "synthesisSpectrum"
+
+\end_inset
+
+).
+ To handle these special-case-consonants, they are replaced in the pronunciation
+ dictionary by the HMM for silence.
+ MFCCs are extracted from the vocal part, because the harmonic partials
+ keep the information about articulation.
+\end_layout
+
+\begin_layout Standard
+A challenge for lyrics-to-audio alignment is posed by regions, in which
+ the predominant source is a solo instrument, because its pitch is detected
+ instead of voice and respectively the synthesized audio does not represent
+ voice.
+ In all sections of the 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ form (except 
+\emph on
+aranağme
+\emph default
+), solo instruments can be present at interludes preceding the vocal phrases.
+ To accommodate these instrumental regions, we train a single-state background
+ noise HMM that captures the timbre of background instruments.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+IMPL: stftDemo_Melodia_whole_songs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Alignment
+\end_layout
+
+\begin_layout Standard
+The lyrics are expanded to phonemes based on grapheme-to-phoneme rules for
+ Turkish 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "Table 1"
+key "Salor2007580"
+
+\end_inset
+
+.
+ In this way, the HMMs are concatenated into a phoneme network.
+
+\color black
+ At the beginning and end of the network for each section, the background
+ noise model (NOISE) is appended.
+ Setting it as optional allows the recognizer to activate it or not, depending
+ on whether sound from background instruments was re-synthesized.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "grammar"
+
+\end_inset
+
+ presents an example of such a network.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement !h
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+
+\size footnotesize
+{sil|NOISE} kUSade [sil] taliim {sil|NOISE}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example of recognition grammar.
+ Curly brackets denote one or more occurrence, square brackets denote zero
+ or more occurrence, and vertical bars denote alternatives.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "grammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The phoneme network is then aligned to the extracted features by means of
+ the Viterbi forced alignment.
+ The alignment is run for each segmented section separately.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+it links each audio time instant to a phoneme model from the network.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% vowel harmony? 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Experimental Setup
+\end_layout
+
+\begin_layout Standard
+
+\color red
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\color red
+To perform an adequate adaptation, clean singin voice in Turkish language
+ from enough different singers was needed.
+ After testing with material from 3 different singers, no significant improvemen
+t on alignment was achieved.
+ Therefore in this work the adaptation step was dropped.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To train the speech model and adapt it to singing voice, as well as to run
+ the forced alignment, the HMM Toolkit (HTK) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "young1993htk"
+
+\end_inset
+
+ is employed.
+ The alignment is run on the re-synthesized voice-only counterparts of the
+ original.
+ 
+\end_layout
+
+\begin_layout Subsection
+Datasets
+\end_layout
+
+\begin_layout Standard
+The speech dataset, used for training, encompasses clean speech totaling
+ to approximately 500 minutes of speech 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Salor2007580"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The adaptation dataset consists of 10 vocal-only recordings from classical
+ turkish singers.
+ We annotated the adaptation audio on phoneme-level, which enables a model
+ re-estimation in a supervised mode.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% TODO: tell more about corpus-driven analysis work
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The test dataset consists of 10 single-vocal 
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ş
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ark
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ı
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ performances (5 distinct male and 5 distinct female).
+ The recordings are selected from a
+\emph on
+ 
+\emph default
+\color black
+musicBrainz
+\color inherit
+ collection of Turkish music
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://musicbrainz.org/collection/544f7aec-dba6-440c-943f-103cf344efbb
+\end_layout
+
+\end_inset
+
+, whereas scores are provided in the machine-readable 
+\emph on
+symbTr
+\emph default
+ format 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "karaosmanouglu2012turkish"
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The dataset will be made available on http://compmusic.upf.edu/datasets
+\end_layout
+
+\end_inset
+
+.
+ The phrase boundaries of each song section were manually annotated, whereby
+ a phrase corresponds roughly to a musical bar and contains 1 or 2 words.
+ Counts of the song sections are presented in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "counts"
+
+\end_inset
+
+.
+ Phrase-level alignment accuracy of the detection results is reported (in
+ terms of the absolute error in seconds).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+.
+ TODO for presi: Compositions are being carefully selected to cover pieces
+ with different degree of heterophony and different degree of alternation
+ of vocals on vibrato.
+ This will facilitate analysis of the effect of these musical aspects on
+ the system's performance.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total #sections
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+section duration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#phrases per section
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+male
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 to 20 seconds
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 to 7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+female
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 to 35 seconds 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 to 7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Section duration and counts for test dataset, divided into male and female
+ cases.
+ Total count of phrases is around 200 for male and 200 for female
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "counts"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Results
+\end_layout
+
+\begin_layout Standard
+Statistics of the alignment errors are summarized in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "results"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+abs.
+ mean
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+standard deviation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+male
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.95
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+female
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.63
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Alignment error (in seconds) for the female and male subsets of the test
+ dataset.
+ Evaluation metrics are mean and standard deviation of the absolute value
+ of the misaligned time 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "results"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The alignment accuracy for female singing voice is slightly better than
+ for male.
+ A reason for this is that for female voice the extracted melody line has
+ less errors than for male.
+ We observed that, when the extracted pitch is wrong (e.g by an octave),
+ the vowels are not recognized correctly.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FigureGenerationScripts/distributionAlignmentError.eps
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Distribution of the alignment error (in seconds) for male and female.
+ Negative values mean that the beginning timestamp is detected as being
+ later than it actually is
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "error"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another problem is that alignment performs poorly towards the end of longer
+ sections, which results in outliers of huge magnitude (seen at the distribution
+ of the alignment error figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error"
+
+\end_inset
+
+).
+ A glance at the distribution of the alignment error of a lyrics-to-audio
+ system for western popular music 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mesaros96automaticalignment"
+
+\end_inset
+
+ reveals that the frequency and magnitude of outliers are comparable to
+ ours.
+ Further, our mean error lies not far from theirs of 1.4 seconds.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+In this work was presented a method for the automatic alignment between
+ lyrics and audio recordings of vocal compositions in the classical Turkish
+ tradition.
+ Performance was evaluated on a dataset, compiled and annotated by us especially
+ for this task.
+ 
+\color black
+The method showed better results for female singers, which is partly explained
+ by the greater amount of erroneously recognized male pitch, which distorts
+ the re-synthesized pitch as well.
+ 
+\end_layout
+
+\begin_layout Standard
+We expect that the generated phrase-to-audio alignment may be a starting
+ point for subsequent musicological analysis tasks.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+make sure this is true on compiling test corpus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+An expected reason for misalignment can be the introduced vocal alternation.
+ To show the degree and the frequency of this phenomenon, a parallel experiment
+ is conducted: The current sung vowel is visualized in the IPA vowel space,
+ using an external tool 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frostel2011vowel"
+
+\end_inset
+
+.
+ Such a visualization will help us identify correlations between alignment
+ accuracy and vocal phenomena.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+This work is partly supported by the European Research Council under the
+ European Union’s Seventh Framework Program, as part of the CompMusic project
+ (ERC grant agreement 267583).
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "JabRefCompMusicNon-Lyrics,JabRefLyrics2Audio"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

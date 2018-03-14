@@ -1,0 +1,802 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 20.512063492063493 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phrases" 
+        xmin = 0 
+        xmax = 20.512063492063493 
+        intervals: size = 4 
+        intervals [1]:
+            xmin = 0 
+            xmax = 6.756950545617265 
+            text = "titrerim mUcrim " 
+        intervals [2]:
+            xmin = 6.756950545617265 
+            xmax = 13.185669324965497 
+            text = "gibi baktIkCa" 
+        intervals [3]:
+            xmin = 13.185669324965497 
+            xmax = 17.77118901373137 
+            text = " istikbalime" 
+        intervals [4]:
+            xmin = 17.77118901373137 
+            xmax = 20.512063492063493 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 20.512063492063493 
+        intervals: size = 78 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.78 
+            text = "" 
+        intervals [2]:
+            xmin = 0.78 
+            xmax = 1.25 
+            text = "mUcrim" 
+        intervals [3]:
+            xmin = 1.25 
+            xmax = 1.31 
+            text = "sil" 
+        intervals [4]:
+            xmin = 1.31 
+            xmax = 2.3 
+            text = "gibi" 
+        intervals [5]:
+            xmin = 2.3 
+            xmax = 13.43 
+            text = "baktIkCa" 
+        intervals [6]:
+            xmin = 13.43 
+            xmax = 13.8 
+            text = "sil" 
+        intervals [7]:
+            xmin = 13.8 
+            xmax = 19.67 
+            text = "istikbalime" 
+        intervals [8]:
+            xmin = 19.67 
+            xmax = 19.68 
+            text = "NOISE" 
+        intervals [9]:
+            xmin = 19.68 
+            xmax = 19.69 
+            text = "NOISE" 
+        intervals [10]:
+            xmin = 19.69 
+            xmax = 19.7 
+            text = "NOISE" 
+        intervals [11]:
+            xmin = 19.7 
+            xmax = 19.71 
+            text = "NOISE" 
+        intervals [12]:
+            xmin = 19.71 
+            xmax = 19.72 
+            text = "NOISE" 
+        intervals [13]:
+            xmin = 19.72 
+            xmax = 19.73 
+            text = "NOISE" 
+        intervals [14]:
+            xmin = 19.73 
+            xmax = 19.74 
+            text = "NOISE" 
+        intervals [15]:
+            xmin = 19.74 
+            xmax = 19.75 
+            text = "NOISE" 
+        intervals [16]:
+            xmin = 19.75 
+            xmax = 19.84 
+            text = "sil" 
+        intervals [17]:
+            xmin = 19.84 
+            xmax = 19.85 
+            text = "NOISE" 
+        intervals [18]:
+            xmin = 19.85 
+            xmax = 19.86 
+            text = "NOISE" 
+        intervals [19]:
+            xmin = 19.86 
+            xmax = 19.87 
+            text = "NOISE" 
+        intervals [20]:
+            xmin = 19.87 
+            xmax = 19.88 
+            text = "NOISE" 
+        intervals [21]:
+            xmin = 19.88 
+            xmax = 19.89 
+            text = "NOISE" 
+        intervals [22]:
+            xmin = 19.89 
+            xmax = 19.9 
+            text = "NOISE" 
+        intervals [23]:
+            xmin = 19.9 
+            xmax = 19.91 
+            text = "NOISE" 
+        intervals [24]:
+            xmin = 19.91 
+            xmax = 19.92 
+            text = "NOISE" 
+        intervals [25]:
+            xmin = 19.92 
+            xmax = 19.93 
+            text = "NOISE" 
+        intervals [26]:
+            xmin = 19.93 
+            xmax = 19.94 
+            text = "NOISE" 
+        intervals [27]:
+            xmin = 19.94 
+            xmax = 19.95 
+            text = "NOISE" 
+        intervals [28]:
+            xmin = 19.95 
+            xmax = 19.96 
+            text = "NOISE" 
+        intervals [29]:
+            xmin = 19.96 
+            xmax = 19.97 
+            text = "NOISE" 
+        intervals [30]:
+            xmin = 19.97 
+            xmax = 19.98 
+            text = "NOISE" 
+        intervals [31]:
+            xmin = 19.98 
+            xmax = 19.99 
+            text = "NOISE" 
+        intervals [32]:
+            xmin = 19.99 
+            xmax = 20 
+            text = "NOISE" 
+        intervals [33]:
+            xmin = 20 
+            xmax = 20.01 
+            text = "NOISE" 
+        intervals [34]:
+            xmin = 20.01 
+            xmax = 20.02 
+            text = "NOISE" 
+        intervals [35]:
+            xmin = 20.02 
+            xmax = 20.03 
+            text = "NOISE" 
+        intervals [36]:
+            xmin = 20.03 
+            xmax = 20.04 
+            text = "NOISE" 
+        intervals [37]:
+            xmin = 20.04 
+            xmax = 20.05 
+            text = "NOISE" 
+        intervals [38]:
+            xmin = 20.05 
+            xmax = 20.06 
+            text = "NOISE" 
+        intervals [39]:
+            xmin = 20.06 
+            xmax = 20.07 
+            text = "NOISE" 
+        intervals [40]:
+            xmin = 20.07 
+            xmax = 20.08 
+            text = "NOISE" 
+        intervals [41]:
+            xmin = 20.08 
+            xmax = 20.12 
+            text = "sil" 
+        intervals [42]:
+            xmin = 20.12 
+            xmax = 20.13 
+            text = "NOISE" 
+        intervals [43]:
+            xmin = 20.13 
+            xmax = 20.14 
+            text = "NOISE" 
+        intervals [44]:
+            xmin = 20.14 
+            xmax = 20.15 
+            text = "NOISE" 
+        intervals [45]:
+            xmin = 20.15 
+            xmax = 20.16 
+            text = "NOISE" 
+        intervals [46]:
+            xmin = 20.16 
+            xmax = 20.17 
+            text = "NOISE" 
+        intervals [47]:
+            xmin = 20.17 
+            xmax = 20.18 
+            text = "NOISE" 
+        intervals [48]:
+            xmin = 20.18 
+            xmax = 20.19 
+            text = "NOISE" 
+        intervals [49]:
+            xmin = 20.19 
+            xmax = 20.2 
+            text = "NOISE" 
+        intervals [50]:
+            xmin = 20.2 
+            xmax = 20.21 
+            text = "NOISE" 
+        intervals [51]:
+            xmin = 20.21 
+            xmax = 20.22 
+            text = "NOISE" 
+        intervals [52]:
+            xmin = 20.22 
+            xmax = 20.23 
+            text = "NOISE" 
+        intervals [53]:
+            xmin = 20.23 
+            xmax = 20.24 
+            text = "NOISE" 
+        intervals [54]:
+            xmin = 20.24 
+            xmax = 20.25 
+            text = "NOISE" 
+        intervals [55]:
+            xmin = 20.25 
+            xmax = 20.26 
+            text = "NOISE" 
+        intervals [56]:
+            xmin = 20.26 
+            xmax = 20.27 
+            text = "NOISE" 
+        intervals [57]:
+            xmin = 20.27 
+            xmax = 20.28 
+            text = "NOISE" 
+        intervals [58]:
+            xmin = 20.28 
+            xmax = 20.29 
+            text = "NOISE" 
+        intervals [59]:
+            xmin = 20.29 
+            xmax = 20.3 
+            text = "NOISE" 
+        intervals [60]:
+            xmin = 20.3 
+            xmax = 20.31 
+            text = "NOISE" 
+        intervals [61]:
+            xmin = 20.31 
+            xmax = 20.32 
+            text = "NOISE" 
+        intervals [62]:
+            xmin = 20.32 
+            xmax = 20.33 
+            text = "NOISE" 
+        intervals [63]:
+            xmin = 20.33 
+            xmax = 20.34 
+            text = "NOISE" 
+        intervals [64]:
+            xmin = 20.34 
+            xmax = 20.35 
+            text = "NOISE" 
+        intervals [65]:
+            xmin = 20.35 
+            xmax = 20.36 
+            text = "NOISE" 
+        intervals [66]:
+            xmin = 20.36 
+            xmax = 20.37 
+            text = "NOISE" 
+        intervals [67]:
+            xmin = 20.37 
+            xmax = 20.38 
+            text = "NOISE" 
+        intervals [68]:
+            xmin = 20.38 
+            xmax = 20.39 
+            text = "NOISE" 
+        intervals [69]:
+            xmin = 20.39 
+            xmax = 20.4 
+            text = "NOISE" 
+        intervals [70]:
+            xmin = 20.4 
+            xmax = 20.41 
+            text = "NOISE" 
+        intervals [71]:
+            xmin = 20.41 
+            xmax = 20.42 
+            text = "NOISE" 
+        intervals [72]:
+            xmin = 20.42 
+            xmax = 20.43 
+            text = "NOISE" 
+        intervals [73]:
+            xmin = 20.43 
+            xmax = 20.44 
+            text = "NOISE" 
+        intervals [74]:
+            xmin = 20.44 
+            xmax = 20.45 
+            text = "NOISE" 
+        intervals [75]:
+            xmin = 20.45 
+            xmax = 20.46 
+            text = "NOISE" 
+        intervals [76]:
+            xmin = 20.46 
+            xmax = 20.47 
+            text = "NOISE" 
+        intervals [77]:
+            xmin = 20.47 
+            xmax = 20.48 
+            text = "NOISE" 
+        intervals [78]:
+            xmin = 20.48 
+            xmax = 20.512063492063493 
+            text = "NOISE" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 20.512063492063493 
+        intervals: size = 112 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.04 
+            text = "" 
+        intervals [2]:
+            xmin = 0.04 
+            xmax = 0.11 
+            text = "IY" 
+        intervals [3]:
+            xmin = 0.11 
+            xmax = 0.14 
+            text = "T" 
+        intervals [4]:
+            xmin = 0.14 
+            xmax = 0.18 
+            text = "RR" 
+        intervals [5]:
+            xmin = 0.18 
+            xmax = 0.21 
+            text = "E" 
+        intervals [6]:
+            xmin = 0.21 
+            xmax = 0.3 
+            text = "RR" 
+        intervals [7]:
+            xmin = 0.3 
+            xmax = 0.74 
+            text = "IY" 
+        intervals [8]:
+            xmin = 0.74 
+            xmax = 0.78 
+            text = "M" 
+        intervals [9]:
+            xmin = 0.78 
+            xmax = 0.85 
+            text = "M" 
+        intervals [10]:
+            xmin = 0.85 
+            xmax = 0.88 
+            text = "UE" 
+        intervals [11]:
+            xmin = 0.88 
+            xmax = 0.94 
+            text = "C" 
+        intervals [12]:
+            xmin = 0.94 
+            xmax = 0.98 
+            text = "RR" 
+        intervals [13]:
+            xmin = 0.98 
+            xmax = 1.22 
+            text = "IY" 
+        intervals [14]:
+            xmin = 1.22 
+            xmax = 1.25 
+            text = "M" 
+        intervals [15]:
+            xmin = 1.25 
+            xmax = 1.31 
+            text = "sil" 
+        intervals [16]:
+            xmin = 1.31 
+            xmax = 1.37 
+            text = "GG" 
+        intervals [17]:
+            xmin = 1.37 
+            xmax = 1.47 
+            text = "IY" 
+        intervals [18]:
+            xmin = 1.47 
+            xmax = 1.54 
+            text = "B" 
+        intervals [19]:
+            xmin = 1.54 
+            xmax = 2.3 
+            text = "IY" 
+        intervals [20]:
+            xmin = 2.3 
+            xmax = 2.33 
+            text = "B" 
+        intervals [21]:
+            xmin = 2.33 
+            xmax = 2.36 
+            text = "AA" 
+        intervals [22]:
+            xmin = 2.36 
+            xmax = 2.63 
+            text = "KK" 
+        intervals [23]:
+            xmin = 2.63 
+            xmax = 2.67 
+            text = "T" 
+        intervals [24]:
+            xmin = 2.67 
+            xmax = 13.0200004 
+            text = "I" 
+        intervals [25]:
+            xmin = 13.0200004 
+            xmax = 13.0500004 
+            text = "KK" 
+        intervals [26]:
+            xmin = 13.0500004 
+            xmax = 13.2400004 
+            text = "fric" 
+        intervals [27]:
+            xmin = 13.2400004 
+            xmax = 13.43 
+            text = "AA" 
+        intervals [28]:
+            xmin = 13.43 
+            xmax = 13.4300004 
+            text = "" 
+        intervals [29]:
+            xmin = 13.4300004 
+            xmax = 13.8 
+            text = "sil" 
+        intervals [30]:
+            xmin = 13.8 
+            xmax = 14.39 
+            text = "IY" 
+        intervals [31]:
+            xmin = 14.39 
+            xmax = 14.56 
+            text = "fric" 
+        intervals [32]:
+            xmin = 14.56 
+            xmax = 14.59 
+            text = "T" 
+        intervals [33]:
+            xmin = 14.59 
+            xmax = 17.7099999 
+            text = "IY" 
+        intervals [34]:
+            xmin = 17.7099999 
+            xmax = 18.9999998 
+            text = "KK" 
+        intervals [35]:
+            xmin = 18.9999998 
+            xmax = 19.0599998 
+            text = "B" 
+        intervals [36]:
+            xmin = 19.0599998 
+            xmax = 19.1099998 
+            text = "AA" 
+        intervals [37]:
+            xmin = 19.1099998 
+            xmax = 19.3499998 
+            text = "LL" 
+        intervals [38]:
+            xmin = 19.3499998 
+            xmax = 19.5799998 
+            text = "IY" 
+        intervals [39]:
+            xmin = 19.5799998 
+            xmax = 19.6099998 
+            text = "M" 
+        intervals [40]:
+            xmin = 19.6099998 
+            xmax = 19.6699998 
+            text = "E" 
+        intervals [41]:
+            xmin = 19.6699998 
+            xmax = 19.67 
+            text = "sp" 
+        intervals [42]:
+            xmin = 19.67 
+            xmax = 19.68 
+            text = "NOISE" 
+        intervals [43]:
+            xmin = 19.68 
+            xmax = 19.69 
+            text = "NOISE" 
+        intervals [44]:
+            xmin = 19.69 
+            xmax = 19.7 
+            text = "NOISE" 
+        intervals [45]:
+            xmin = 19.7 
+            xmax = 19.71 
+            text = "NOISE" 
+        intervals [46]:
+            xmin = 19.71 
+            xmax = 19.72 
+            text = "NOISE" 
+        intervals [47]:
+            xmin = 19.72 
+            xmax = 19.73 
+            text = "NOISE" 
+        intervals [48]:
+            xmin = 19.73 
+            xmax = 19.74 
+            text = "NOISE" 
+        intervals [49]:
+            xmin = 19.74 
+            xmax = 19.75 
+            text = "NOISE" 
+        intervals [50]:
+            xmin = 19.75 
+            xmax = 19.84 
+            text = "sil" 
+        intervals [51]:
+            xmin = 19.84 
+            xmax = 19.85 
+            text = "NOISE" 
+        intervals [52]:
+            xmin = 19.85 
+            xmax = 19.86 
+            text = "NOISE" 
+        intervals [53]:
+            xmin = 19.86 
+            xmax = 19.87 
+            text = "NOISE" 
+        intervals [54]:
+            xmin = 19.87 
+            xmax = 19.88 
+            text = "NOISE" 
+        intervals [55]:
+            xmin = 19.88 
+            xmax = 19.89 
+            text = "NOISE" 
+        intervals [56]:
+            xmin = 19.89 
+            xmax = 19.9 
+            text = "NOISE" 
+        intervals [57]:
+            xmin = 19.9 
+            xmax = 19.91 
+            text = "NOISE" 
+        intervals [58]:
+            xmin = 19.91 
+            xmax = 19.92 
+            text = "NOISE" 
+        intervals [59]:
+            xmin = 19.92 
+            xmax = 19.93 
+            text = "NOISE" 
+        intervals [60]:
+            xmin = 19.93 
+            xmax = 19.94 
+            text = "NOISE" 
+        intervals [61]:
+            xmin = 19.94 
+            xmax = 19.95 
+            text = "NOISE" 
+        intervals [62]:
+            xmin = 19.95 
+            xmax = 19.96 
+            text = "NOISE" 
+        intervals [63]:
+            xmin = 19.96 
+            xmax = 19.97 
+            text = "NOISE" 
+        intervals [64]:
+            xmin = 19.97 
+            xmax = 19.98 
+            text = "NOISE" 
+        intervals [65]:
+            xmin = 19.98 
+            xmax = 19.99 
+            text = "NOISE" 
+        intervals [66]:
+            xmin = 19.99 
+            xmax = 20 
+            text = "NOISE" 
+        intervals [67]:
+            xmin = 20 
+            xmax = 20.01 
+            text = "NOISE" 
+        intervals [68]:
+            xmin = 20.01 
+            xmax = 20.02 
+            text = "NOISE" 
+        intervals [69]:
+            xmin = 20.02 
+            xmax = 20.03 
+            text = "NOISE" 
+        intervals [70]:
+            xmin = 20.03 
+            xmax = 20.04 
+            text = "NOISE" 
+        intervals [71]:
+            xmin = 20.04 
+            xmax = 20.05 
+            text = "NOISE" 
+        intervals [72]:
+            xmin = 20.05 
+            xmax = 20.06 
+            text = "NOISE" 
+        intervals [73]:
+            xmin = 20.06 
+            xmax = 20.07 
+            text = "NOISE" 
+        intervals [74]:
+            xmin = 20.07 
+            xmax = 20.08 
+            text = "NOISE" 
+        intervals [75]:
+            xmin = 20.08 
+            xmax = 20.12 
+            text = "sil" 
+        intervals [76]:
+            xmin = 20.12 
+            xmax = 20.13 
+            text = "NOISE" 
+        intervals [77]:
+            xmin = 20.13 
+            xmax = 20.14 
+            text = "NOISE" 
+        intervals [78]:
+            xmin = 20.14 
+            xmax = 20.15 
+            text = "NOISE" 
+        intervals [79]:
+            xmin = 20.15 
+            xmax = 20.16 
+            text = "NOISE" 
+        intervals [80]:
+            xmin = 20.16 
+            xmax = 20.17 
+            text = "NOISE" 
+        intervals [81]:
+            xmin = 20.17 
+            xmax = 20.18 
+            text = "NOISE" 
+        intervals [82]:
+            xmin = 20.18 
+            xmax = 20.19 
+            text = "NOISE" 
+        intervals [83]:
+            xmin = 20.19 
+            xmax = 20.2 
+            text = "NOISE" 
+        intervals [84]:
+            xmin = 20.2 
+            xmax = 20.21 
+            text = "NOISE" 
+        intervals [85]:
+            xmin = 20.21 
+            xmax = 20.22 
+            text = "NOISE" 
+        intervals [86]:
+            xmin = 20.22 
+            xmax = 20.23 
+            text = "NOISE" 
+        intervals [87]:
+            xmin = 20.23 
+            xmax = 20.24 
+            text = "NOISE" 
+        intervals [88]:
+            xmin = 20.24 
+            xmax = 20.25 
+            text = "NOISE" 
+        intervals [89]:
+            xmin = 20.25 
+            xmax = 20.26 
+            text = "NOISE" 
+        intervals [90]:
+            xmin = 20.26 
+            xmax = 20.27 
+            text = "NOISE" 
+        intervals [91]:
+            xmin = 20.27 
+            xmax = 20.28 
+            text = "NOISE" 
+        intervals [92]:
+            xmin = 20.28 
+            xmax = 20.29 
+            text = "NOISE" 
+        intervals [93]:
+            xmin = 20.29 
+            xmax = 20.3 
+            text = "NOISE" 
+        intervals [94]:
+            xmin = 20.3 
+            xmax = 20.31 
+            text = "NOISE" 
+        intervals [95]:
+            xmin = 20.31 
+            xmax = 20.32 
+            text = "NOISE" 
+        intervals [96]:
+            xmin = 20.32 
+            xmax = 20.33 
+            text = "NOISE" 
+        intervals [97]:
+            xmin = 20.33 
+            xmax = 20.34 
+            text = "NOISE" 
+        intervals [98]:
+            xmin = 20.34 
+            xmax = 20.35 
+            text = "NOISE" 
+        intervals [99]:
+            xmin = 20.35 
+            xmax = 20.36 
+            text = "NOISE" 
+        intervals [100]:
+            xmin = 20.36 
+            xmax = 20.37 
+            text = "NOISE" 
+        intervals [101]:
+            xmin = 20.37 
+            xmax = 20.38 
+            text = "NOISE" 
+        intervals [102]:
+            xmin = 20.38 
+            xmax = 20.39 
+            text = "NOISE" 
+        intervals [103]:
+            xmin = 20.39 
+            xmax = 20.4 
+            text = "NOISE" 
+        intervals [104]:
+            xmin = 20.4 
+            xmax = 20.41 
+            text = "NOISE" 
+        intervals [105]:
+            xmin = 20.41 
+            xmax = 20.42 
+            text = "NOISE" 
+        intervals [106]:
+            xmin = 20.42 
+            xmax = 20.43 
+            text = "NOISE" 
+        intervals [107]:
+            xmin = 20.43 
+            xmax = 20.44 
+            text = "NOISE" 
+        intervals [108]:
+            xmin = 20.44 
+            xmax = 20.45 
+            text = "NOISE" 
+        intervals [109]:
+            xmin = 20.45 
+            xmax = 20.46 
+            text = "NOISE" 
+        intervals [110]:
+            xmin = 20.46 
+            xmax = 20.47 
+            text = "NOISE" 
+        intervals [111]:
+            xmin = 20.47 
+            xmax = 20.48 
+            text = "NOISE" 
+        intervals [112]:
+            xmin = 20.48 
+            xmax = 20.512063492063493 
+            text = "NOISE" 

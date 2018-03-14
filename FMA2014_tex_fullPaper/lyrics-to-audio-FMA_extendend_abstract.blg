@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: lyrics-to-audio-FMA_extendend_abstract.aux
+The style file: newapa.bst
+Illegal, another \bibstyle command---line 26 of file lyrics-to-audio-FMA_extendend_abstract.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Database file #1: JabRefCompMusicNon-Lyrics.bib
+Database file #2: JabRefLyrics2Audio.bib
+You can't pop an empty literal stack for entry karaosmanouglu2012turkish
+while executing---line 1459 of file newapa.bst
+You can't pop an empty literal stack for entry sertanSectionLinking2014
+while executing---line 1459 of file newapa.bst
+You've used 8 entries,
+            2708 wiz_defined-function locations,
+            642 strings with 6475 characters,
+and the built_in function-call counts, 4022 in all, are:
+= -- 358
+> -- 199
+< -- 5
++ -- 79
+- -- 75
+* -- 364
+:= -- 762
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 73
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 157
+empty$ -- 259
+format.name$ -- 85
+if$ -- 750
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 43
+num.names$ -- 32
+pop$ -- 69
+preamble$ -- 1
+purify$ -- 81
+quote$ -- 0
+skip$ -- 114
+stack$ -- 0
+substring$ -- 226
+swap$ -- 44
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 0
+while$ -- 32
+width$ -- 0
+write$ -- 106
+(There were 3 error messages)

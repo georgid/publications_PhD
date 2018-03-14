@@ -1,0 +1,222 @@
+% This file was created with JabRef 2.10.
+% Encoding: MacRoman
+
+
+@InProceedings{chen2012chord,
+  Title                    = {Chord Recognition Using Duration-explicit Hidden Markov Models.},
+  Author                   = {Chen, Ruofeng and Shen, Weibin and Srinivasamurthy, Ajay and Chordia, Parag},
+  Booktitle                = {ISMIR},
+  Year                     = {2012},
+  Organization             = {Citeseer},
+  Pages                    = {445--450},
+
+  Review                   = {duraiotn ditribution p(d)
+- has same max Dur D=20 beats for all chords.
+- approximated by counts of occurence ( for each chord )}
+}
+
+@InProceedings{dzhambazov2014automatic,
+  Title                    = {Automatic lyrics-to-audio alignment in classical {T}urkish music},
+  Author                   = {Dzhambazov, Georgi and Sent{\"u}rk, Sertan and Serra, Xavier},
+  Booktitle                = {The 4th International Workshop on Folk Music Analysis},
+  Year                     = {2014},
+  Pages                    = {61--64}
+}
+
+@InProceedings{frostel2011vowel,
+  Title                    = {The Vowel Worm: Real-time Mapping and Visualisation of Sung Vowels in Music},
+  Author                   = {Frostel, Harald and Arzt, Andreas and Widmer, Gerhard},
+  Booktitle                = {Proceedings of the 8th Sound and Music Computing Conference},
+  Year                     = {2011},
+  Pages                    = {214--219}
+}
+
+@Article{fujihara2011lyricsynchronizer,
+  Title                    = {LyricSynchronizer: Automatic synchronization system between musical audio signals and lyrics},
+  Author                   = {Fujihara, Hiromasa and Goto, Masataka and Ogata, Jun and Okuno, Hiroshi G},
+  Journal                  = {Selected Topics in Signal Processing, IEEE Journal of},
+  Year                     = {2011},
+  Number                   = {6},
+  Pages                    = {1252--1261},
+  Volume                   = {5},
+
+  Publisher                = {IEEE},
+  Review                   = {1. vocal segregation: 
+- find f-0 contour of most predominant melody. extract harmonic structure crresponding to melody. resynthesize melodic line
+how does the newly sznthesized sound keeps the formants for the vowels. Are they based on the harmonics ? How does it sound?
+
+2. run voice/non-voice HMM detector
+- based on a novel feature
+
+3. detect fricative sounds in the original sygnal (s, z, f, )-
+- because and as non-voiced have no harmonic structure and thus are not detected by the vocal segr. module. 
+fricatives are longer
+Then at the candidate timestamps of fricatives on the alignment a fricative is imposed.
+
+
+Section II.D - Viterbi alignment: 
+
+only the vocals are aligned
+
+ Adaptation is based on: 
+MLLR, MAP but how: which for which phonemes?}
+}
+
+@InProceedings{janer2013separation,
+  Title                    = {Separation of unvoiced fricatives in singing voice mixtures with semi-supervised NMF},
+  Author                   = {Janer, Jordi and Marxer, Ricard},
+  Booktitle                = {Proc. 16th International Conference on Digital Audio Effects (DAFx)},
+  Year                     = {2013}
+}
+
+@Article{kruspe2016retrieval,
+  Title                    = {Retrieval of textual song lyrics from sung inputs},
+  Author                   = {Kruspe, Anna M and Fraunhofer, IDMT},
+  Journal                  = {INTERSPEECH, San Francisco, CA, USA},
+  Year                     = {2016},
+
+  Review                   = {Posteriograms are extracted from the candidate audio. 
+The target lyrics of a song are converted to oracle posteriograms of with no timing information (a kind of activation template)
+DTW is run betwen a template i(considered as query ) and the posteriograms.
+
+Evaluation: accuracy of top 1 match}
+}
+
+@InProceedings{Loscos99low-delaysinging,
+  Title                    = {Low-Delay Singing Voice Alignment to Text},
+  Author                   = {Alex Loscos and Pedro Cano and Jordi Bonada},
+  Booktitle                = {Proceedings of the ICMC},
+  Year                     = {1999}
+}
+
+@InCollection{muller2007lyrics,
+  Title                    = {Lyrics-based audio retrieval and multimodal navigation in music collections},
+  Author                   = {M{\"u}ller, Meinard and Kurth, Frank and Damm, David and Fremerey, Christian and Clausen, Michael},
+  Booktitle                = {Research and Advanced Technology for Digital Libraries},
+  Publisher                = {Springer},
+  Year                     = {2007},
+  Pages                    = {112--123}
+}
+
+@InProceedings{Mesaros96automaticalignment,
+  Title                    = {Automatic alignment of music audio and lyrics},
+  Author                   = {Annamaria Mesaros and Tuomas Virtanen},
+  Booktitle                = {Proceedings of the 11th Int. Conference on Digital Audio Effects (DAFx-08},
+  Year                     = {2008},
+
+  Review                   = {
+
+ viterbi decoding used, but restricted to one string of phonemes.
+manual alignment of start of lyrial lines to text made. 
+
+there is first vocal line extraction model
+
+model: 
+3-state phonemes from speech corpus, adapted using MLLR to clean singing voice. 
++ 
+background noise model having different amoount of states. 
+
+
+-----
+Problems of the lyrics-audio alignment task: 
+1) there are significant differences in the dynamics and general properties of speech and singing sounds. 
+2) The com- plexity of the polyphonic music signal compared to a pure singing voice signal
+
+-----------------
+ uses short pauses and silence models and background noise models
+
+step 2: 
+Sinusoidal modeling: 
+x(k) = voice(k) + backgr(k)
+sound is modeled as a sum of 40 overtones. the amplitude of each overtone is calculated based correlation of the original signal x(k) and the sinusoidal component.
+For details how to do synthesis, read [8]}
+}
+
+@Article{rabiner1989tutorial,
+  Title                    = {A tutorial on hidden Markov models and selected applications in speech recognition},
+  Author                   = {Rabiner, Lawrence},
+  Journal                  = {Proceedings of the IEEE},
+  Year                     = {1989},
+  Number                   = {2},
+  Pages                    = {257--286},
+  Volume                   = {77},
+
+  Publisher                = {IEEE}
+}
+
+@Article{salamon2012melody,
+  Title                    = {Melody extraction from polyphonic music signals using pitch contour characteristics},
+  Author                   = {Salamon, Justin and G{\'o}mez, Emilia},
+  Journal                  = {Audio, Speech, and Language Processing, IEEE Transactions on},
+  Year                     = {2012},
+  Number                   = {6},
+  Pages                    = {1759--1770},
+  Volume                   = {20},
+
+  Publisher                = {IEEE}
+}
+
+@TechReport{Serra89asystem,
+  Title                    = {A System for Sound Analysis/Transformation/Synthesis Based on a Deterministic Plus Stochastic Decomposition},
+  Author                   = {Xavier Serra},
+  Year                     = {1989}
+}
+
+@InProceedings{wang2004lyrically,
+  Title                    = {LyricAlly: automatic synchronization of acoustic musical signals and textual lyrics},
+  Author                   = {Wang, Ye and Kan, Min-Yen and Nwe, Tin Lay and Shenoy, Arun and Yin, Jun},
+  Booktitle                = {Proceedings of the 12th annual ACM international conference on Multimedia},
+  Year                     = {2004},
+  Organization             = {ACM},
+  Pages                    = {212--219},
+
+  Review                   = {three modules: 
+
+beat detector -> chorus Detector -> vocal detector 
+
+Section 4.3. Vocal detector. 
+Based on HMM of vocal only and non-vocal spectral distribution. Time resolution: inter-beat interval.
+
+Section 5.1 Section PRocessor
+Text processing is done (longest subsequence) to label chorus sections. 
+phoneme durations learned from annotated sining voice dataset. duraiton is modeled by a distrubution of tis instances.
+
+Section 5.2. bar-detector decodes real-time duration of bars and fits lyrics into these bars.}
+}
+
+@Article{wong2007automatic,
+  Title                    = {Automatic lyrics alignment for Cantonese popular music},
+  Author                   = {Wong, Chi Hang and Szeto, Wai Man and Wong, Kin Hong},
+  Journal                  = {Multimedia Systems},
+  Year                     = {2007},
+  Number                   = {4-5},
+  Pages                    = {307--323},
+  Volume                   = {12},
+
+  Publisher                = {Springer}
+}
+
+@Book{young1993htk,
+  Title                    = {The HTK hidden Markov model toolkit: Design and philosophy},
+  Author                   = {Young, Steve J},
+  Publisher                = {Citeseer},
+  Year                     = {1993}
+}
+
+@Article{,
+  Owner                    = {joro},
+  Timestamp                = {2016.03.29}
+}
+
+@Article{,
+  Title                    = {masataka article},
+
+  Owner                    = {joro},
+  Review                   = {It is known that the singing voice has more
+complicated frequency and dynamic characteristics than speech [20]. For example,
+ßuctuation of fundamental frequency (F0) 2 and loudness of singing voices are far stronger
+than those of speech sounds.},
+  Timestamp                = {2013.05.01},
+  Url                      = {http://drops.dagstuhl.de/opus/volltexte/2012/3464/pdf/3.pdf}
+}
+

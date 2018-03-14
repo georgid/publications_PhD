@@ -1,0 +1,273 @@
+% This file was created with JabRef 2.10.
+% Encoding: MacRoman
+
+
+@InProceedings{dittmar2012towards,
+  Title                    = {Towards lyrics spotting in the SyncGlobal project},
+  Author                   = {Dittmar, Christian and Mercado, Pedro and Grossmann, Holger and Cano, Estefan{\i}a},
+  Booktitle                = {Cognitive Information Processing (CIP), 2012 3rd International Workshop on},
+  Year                     = {2012},
+  Organization             = {IEEE},
+  Pages                    = {1--6}
+}
+
+@Article{duda1972use,
+  Title                    = {Use of the {H}ough transformation to detect lines and curves in pictures},
+  Author                   = {Duda, Richard O and Hart, Peter E},
+  Journal                  = {Communications of the ACM},
+  Year                     = {1972},
+  Number                   = {1},
+  Pages                    = {11--15},
+  Volume                   = {15},
+
+  Publisher                = {ACM}
+}
+
+@Conference{Dzhambazov,
+  Title                    = {Modeling of Phoneme Durations for Alignment between Polyphonic Audio and Lyrics},
+  Author                   = {Georgi Dzhambazov and Serra, Xavier},
+  Booktitle                = {Sound and Music Computing Conference},
+  Year                     = {2015},
+
+  Address                  = {Maynooth, Ireland},
+
+  Abstract                 = {In this work we propose how to modify a standard scheme for text-to-speech alignment for the alignment of lyrics and singing voice. To this end we model the duration of phonemes specific for the case of singing. We rely on a duration-explicit hidden Markov model (DHMM) phonetic recognizer based on mel frequency cepstral coefficients (MFCCs), which are extracted in a way robust to background instrumental sounds. The proposed approach is tested on polyphonic audio from the classical Turkish music tradition in two settings: with and without modeling phoneme durations. Phoneme durations are inferred from sheet music. In order to assess the impact of the polyphonic setting, alignment is evaluated as well on an acapella dataset, compiled especially for this study. We show that the explicit modeling of phoneme durations improves alignment accuracy by absolute 10 percent on the level of lyrics lines (phrases) and performs on par with state-of-the-art aligners for other languages.}
+}
+
+@InProceedings{fujihara2008hyperlinking,
+  Title                    = {Hyperlinking Lyrics: A Method for Creating Hyperlinks Between Phrases in Song Lyrics},
+  Author                   = {Fujihara, Hiromasa and Goto, Masataka and Ogata, Jun},
+  Booktitle                = {Proceedings of the 9th International Conference on Music Information Retrieval},
+  Year                     = {2008},
+
+  Address                  = {Philadelphia, USA},
+  Month                    = {September 14-18},
+  Pages                    = {281--286}
+}
+
+@InProceedings{hansen2012recognition,
+  Title                    = {Recognition of Phonemes in A-cappella Recordings using Temporal Patterns and Mel Frequency Cepstral Coefficients},
+  Author                   = {Hansen, Jens Kofod and Fraunhofer, IDMT},
+  Year                     = {2012},
+
+  Review                   = {fusion of MLP-HMM and TRAP-HMM classifiers 
+
+Training on singing voice only: 
+
+section 3.5:
+dataset: 12 phoneme-level annotated songs. Is thaining done with HTK? 
+
+Phonemes which are over-presented are discarded.
+
+the phoneme counts in training are manually selected so that they are more or less equal}
+}
+
+@Conference{holzapfelsection,
+  Title                    = {Section-level Modeling of Musical Audio for Linking Performances to Scores in Turkish Makam Music},
+  Author                   = {Holzapfel, Andre and {\c S}im{\c s}ekli, Umut and Sertan {\c S}ent{\"u}rk and Cemgil, Ali Taylan},
+  Booktitle                = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  Year                     = {2015},
+
+  Address                  = {Brisbane, Australia},
+  Month                    = {19/04/2015},
+
+  Abstract                 = {Section linking aims at relating structural units in the notation of a piece of music to their occurrences in a performance of the piece. In this paper, we address this task by presenting a score-informed hierarchical Hidden Markov Model (HHMM) for modeling musical audio signals on the temporal level of sections present in a composition, where the main idea is to explicitly model the long range and hierarchical structure of music signals. So far, approaches based on HHMM or similar methods were mainly developed for a note-to-note alignment, i.e. an alignment based on shorter temporal units than sections. Such approaches, however, are conceptually problematic when the performances differ substantially from the reference score due to interpretation and improvisation, a very common phenomenon, for instance, in Turkish makam music. In addition to having low computational complexity compared to note-to-note alignment and achieving a transparent and elegant model, the experimental results show that our method outperforms a previously presented approach on a Turkish makam music corpus.},
+  Url                      = {http://sertansenturk.com/uploads/publications/holzapfel2015linking_icassp.pdf}
+}
+
+@InProceedings{krebs2013rhythmic,
+  Title                    = {Rhythmic pattern modeling for beat and downbeat tracking in musical audio},
+  Author                   = {Krebs, Florian and B{\"o}ck, Sebastian and Widmer, Gerhard},
+  Booktitle                = {Proceedings of the 14th International Society for Music Information Retrieval Conference},
+  Year                     = {2013},
+
+  Address                  = {Curitiba, Brazil},
+  Month                    = {November 4-8}
+}
+
+@InProceedings{kruspekeyword,
+  Title                    = {Keyword Spotting in A-capella Singing},
+  Author                   = {Kruspe, Anna M.},
+  Booktitle                = {Proceedings of the 15th International Society for Music Information Retrieval Conference},
+  Year                     = {2014},
+
+  Address                  = {Taipei, Taiwan},
+  Pages                    = {271-276},
+
+  Review                   = {Approach: 
+first step : phoneme Recognition by MLP. sperately with 3 different features : MFCC, PLP and TRAP
+second step: postprocessing and combining of features
+third HMM-based keyword spotting. as input used postetior probs from HMMs
+
+\
+Dataset: 19 clean singing vocie recordings
+
+Conslucion: MLP trained on singing voice better than MLP trained on speech}
+}
+
+@Article{,
+  Author                   = {Kruspe, A. M. - ISMIR 2016},
+
+  Owner                    = {joro},
+  Timestamp                = {2016.09.25}
+}
+
+@Article{levy2008structural,
+  Title                    = {Structural segmentation of musical audio by constrained clustering},
+  Author                   = {Levy, Mark and Sandler, Mark},
+  Journal                  = {Audio, Speech, and Language Processing, IEEE Transactions on},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {318--326},
+  Volume                   = {16},
+
+  Publisher                = {IEEE}
+}
+
+@Book{muller2007information,
+  Title                    = {Information retrieval for music and motion},
+  Author                   = {M{\"u}ller, Meinard},
+  Publisher                = {Springer},
+  Year                     = {2007},
+  Volume                   = {2}
+}
+
+@Article{mandal2014recent,
+  Title                    = {Recent developments in spoken term detection: a survey},
+  Author                   = {Mandal, Anupam and Kumar, KR Prasanna and Mitra, Pabitra},
+  Journal                  = {International Journal of Speech Technology},
+  Year                     = {2014},
+  Number                   = {2},
+  Pages                    = {183--198},
+  Volume                   = {17},
+
+  Publisher                = {Springer}
+}
+
+@Book{Manning:2008:IIR:1394399,
+  Title                    = {Introduction to Information Retrieval},
+  Author                   = {Manning, Christopher D. and Raghavan, Prabhakar and Sch\"{u}tze, Hinrich},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2008},
+
+  Address                  = {New York, NY, USA},
+
+  ISBN                     = {0521865719, 9780521865715}
+}
+
+@Article{mcnab1995signal,
+  Title                    = {Signal processing for melody transcription},
+  Author                   = {McNab, Rodger J and Smith, Lloyd A and Witten, Ian H},
+  Year                     = {1995},
+
+  Publisher                = {University of Waikato, Department of Computer Science},
+  Review                   = {several pitch based and amplitude based segmentation methods}
+}
+
+@Article{molina2015sipth,
+  Title                    = {Sipth: Singing transcription based on hysteresis defined on the pitch-time curve},
+  Author                   = {Molina, Emilio and Tard{\'o}n, Lorenzo J and Barbancho, Ana M and Barbancho, Isabel},
+  Journal                  = {Audio, Speech, and Language Processing, IEEE/ACM Transactions on},
+  Year                     = {2015},
+  Number                   = {2},
+  Pages                    = {252--263},
+  Volume                   = {23},
+
+  Publisher                = {IEEE},
+  Review                   = {implemented Rynanen;s HMM-based approach}
+}
+
+@PhdThesis{murphy2002dynamic,
+  Title                    = {Dynamic bayesian networks: representation, inference and learning},
+  Author                   = {Murphy, Kevin Patrick},
+  School                   = {University of California},
+  Year                     = {2002}
+}
+
+@InProceedings{sertanComposition,
+  Title                    = {Composition Identification},
+  Author                   = {Senturk}
+}
+
+@InProceedings{szoke2005comparison,
+  Title                    = {Comparison of keyword spotting approaches for informal continuous speech.},
+  Author                   = {Sz{\"o}ke, Igor and Schwarz, Petr and Matejka, Pavel and Burget, Luk{\'a}s and Karafi{\'a}t, Martin and Fapso, Michal and Cernock{\`y}, Jan},
+  Booktitle                = {Interspeech},
+  Year                     = {2005},
+  Pages                    = {633--636}
+}
+
+@InProceedings{TurnbullEtAl_2007_ASupeApprFor,
+  Title                    = {A Supervised Approach for Detecting Boundaries in Music Using Difference Features and Boosting},
+  Author                   = {Turnbull, Douglas and Lanckriet, Gert and Pampalk, Elias and Goto, Masataka},
+  Booktitle                = {Proceedings of the 8th International Conference on Music Information Retrieval},
+  Year                     = {2007},
+
+  Address                  = {Vienna, Austria},
+  Month                    = {September 23-27},
+  Pages                    = {51--54}
+}
+
+@InProceedings{von2010perceptual,
+  Title                    = {Perceptual audio features for unsupervised key-phrase detection},
+  Author                   = {Von Zeddelmann, Dirk and Kurth, Frank and M{\"u}ller, M},
+  Booktitle                = {Acoustics Speech and Signal Processing (ICASSP), 2010 IEEE International Conference on},
+  Year                     = {2010},
+  Organization             = {IEEE},
+  Pages                    = {257--260},
+
+  Review                   = {Approach to find occurences of key phrases from speech. 
+Speaker independent and unsupervised. 
+
+Uses as query spoken phrase, not textual query. 
+ 
+features: HFCC 
+
+search strategy : the diagonal matching [4] - line segements assuming same duration. 
+it can cope with 10% change of speed}
+}
+
+@InProceedings{WhiteleyEtAl_2006_BayeModeOfTemp,
+  Title                    = {Bayesian Modelling of Temporal Structure in Musical Audio},
+  Author                   = {Whiteley, Nick and Cemgil, A. Taylan and Godsill, Simon},
+  Booktitle                = {Proceedings of the 7th International Conference on Music Information Retrieval},
+  Year                     = {2006},
+
+  Address                  = {Victoria (BC), Canada},
+  Month                    = {October 8-12}
+}
+
+@Article{yu2010hidden,
+  Title                    = {Hidden semi-Markov models},
+  Author                   = {Yu, Shun-Zheng},
+  Journal                  = {Artificial Intelligence},
+  Year                     = {2010},
+  Number                   = {2},
+  Pages                    = {215--243},
+  Volume                   = {174},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{dzahmbazovLyricalDur,
+  Title                    = {ON THE USE OF LYRICAL DURATION FROM MUSICAL SCORE FOR AUTOMATIC LYRICS-TO-AUDIO ALIGNMENT},
+
+  Owner                    = {dzhambazov}
+}
+
+@Unpublished{singing_separation,
+  Title                    = {singing_separation},
+
+  Owner                    = {joro},
+  Timestamp                = {2014.02.06},
+  Url                      = {http://labrosa.ee.columbia.edu/hamr2013/proceedings/doku.php/singing_separation}
+}
+
+@comment{jabref-meta: groupsversion:3;}
+
+@comment{jabref-meta: groupstree:
+0 AllEntriesGroup:;
+1 ExplicitGroup:note transcription\;0\;mcnab1995signal\;molina2015sipt
+h\;;
+}
+

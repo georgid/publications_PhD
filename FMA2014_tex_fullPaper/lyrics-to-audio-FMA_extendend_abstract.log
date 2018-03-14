@@ -1,0 +1,404 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.12.5)  24 FEB 2014 12:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**lyrics-to-audio-FMA_extendend_abstract.tex
+(./lyrics-to-audio-FMA_extendend_abstract.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/latin9.def
+File: latin9.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen103
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks19
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks20
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2009/11/07 8.31a (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count100
+) (./fma2014.sty) (./lyrics-to-audio-FMA_extendend_abstract.aux)
+\openout1 = `lyrics-to-audio-FMA_extendend_abstract.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 61.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen115
+\MPnumerator=\count105
+\everyMPtoPDFconversion=\toks25
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 62.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 62.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+
+Overfull \hbox (3.26486pt too wide) in paragraph at lines 72--77
+\OT1/ptm/m/n/10 tween lyrics and mu-sic (also known as lyrics-to-audio align-
+ []
+
+
+Package natbib Warning: Citation `CompMusic2276' on page 1 undefined on input l
+ine 82.
+
+
+Overfull \hbox (3.25504pt too wide) in paragraph at lines 90--96
+\OT1/ptm/m/n/10 dom-i-nance. This mu-si-cal in-ter-ac-tion is termed het-eropho
+ny. 
+ []
+
+
+Overfull \hbox (5.91515pt too wide) in paragraph at lines 141--147
+[]\OT1/ptm/m/n/10 Furthermore, we ex-ploit a lyrics rep-re-sen-ta-tion, for whi
+ch
+ []
+
+
+Overfull \hbox (2.1052pt too wide) in paragraph at lines 141--147
+\OT1/ptm/m/n/10 parts through an ex-ter-nal mod-ule, which links sec-tions from
+
+ []
+
+Package epstopdf Info: Source file: <TrainingWithArrow.eps>
+(epstopdf)                    date: 2014-02-24 12:37:48
+(epstopdf)                    size: 15184 bytes
+(epstopdf)             Output file: <TrainingWithArrow-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-02-17 17:42:51
+(epstopdf)                    size: 5970 bytes
+(epstopdf)             Command: <repstopdf --outfile=TrainingWithArrow-eps-conv
+erted-to.pdf TrainingWithArrow.eps>
+(epstopdf)             \includegraphics on input line 151.
+runsystem(repstopdf --outfile=TrainingWithArrow-eps-converted-to.pdf TrainingWi
+thArrow.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <TrainingWithArrow-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-02-24 12:47:49
+(epstopdf)                    size: 5976 bytes.
+<TrainingWithArrow-eps-converted-to.pdf, id=1, 544.0325pt x 322.20375pt>
+File: TrainingWithArrow-eps-converted-to.pdf Graphic file (type pdf)
+
+<use TrainingWithArrow-eps-converted-to.pdf>
+Package epstopdf Info: Source file: <Alignment.eps>
+(epstopdf)                    date: 2014-02-17 17:31:11
+(epstopdf)                    size: 16072 bytes
+(epstopdf)             Output file: <Alignment-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-02-17 17:34:17
+(epstopdf)                    size: 7410 bytes
+(epstopdf)             Command: <repstopdf --outfile=Alignment-eps-converted-to
+.pdf Alignment.eps>
+(epstopdf)             \includegraphics on input line 151.
+Package epstopdf Info: Output file is already uptodate.
+
+<Alignment-eps-converted-to.pdf, id=2, 616.3025pt x 278.03876pt>
+File: Alignment-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Alignment-eps-converted-to.pdf>
+Overfull \hbox (4.6352pt too wide) in paragraph at lines 169--173
+\OT1/ptm/m/n/10 spec-tral en-ve-lope. Thus we uti-lize the first 12 mel-frequen
+cy
+ []
+
+
+Overfull \hbox (0.3952pt too wide) in paragraph at lines 169--173
+\OT1/ptm/m/n/10 cep-stral co-ef-fi-cients (MFCCs), which are known to ap-prox-
+ []
+
+[1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+Overfull \hbox (1.305pt too wide) in paragraph at lines 174--177
+[]\OT1/ptm/m/n/10 An 3-state HMM model for each of 38 turk-ish phonemes
+ []
+
+
+Overfull \hbox (8.77495pt too wide) in paragraph at lines 181--184
+\OT1/ptm/m/n/10 Compared to speech, singing voice pos-sesses dif-fer-ent acous-
+
+ []
+
+
+Overfull \hbox (19.85484pt too wide) in paragraph at lines 190--199
+\OT1/ptm/m/n/10 and aims to trans-form the acous-tic space of speaker-independe
+nt
+ []
+
+
+Package natbib Warning: Citation `sertanSectionLinking2014' on page 2 undefined
+ on input line 209.
+
+
+Package natbib Warning: Citation `durrieu2009main' on page 2 undefined on input
+ line 231.
+
+
+Overfull \hbox (5.50536pt too wide) in paragraph at lines 235--244
+\OT1/ptm/m/n/10 word, al-lows to ac-com-mo-date short non-vocal breaks. These
+ []
+
+
+Package natbib Warning: Citation `Salor2007580' on page 2 undefined on input li
+ne 262.
+
+
+Package natbib Warning: Citation `karaosmanouglu2012turkish' on page 2 undefine
+d on input line 280.
+
+
+Overfull \hbox (0.78519pt too wide) in paragraph at lines 295--299
+\OT1/ptm/m/n/10 Visualization of the word be-gin-ning and end-ing times-tamps
+ []
+
+[2 <./TrainingWithArrow-eps-converted-to.pdf> <./Alignment-eps-converted-to.pdf
+>] (./lyrics-to-audio-FMA_extendend_abstract.bbl
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+)
+
+Package natbib Warning: There were undefined citations.
+
+[3
+
+] (./lyrics-to-audio-FMA_extendend_abstract.aux) ) 
+Here is how much of TeX's memory you used:
+ 2767 strings out of 493747
+ 36647 string characters out of 3143546
+ 96089 words of memory out of 3000000
+ 5982 multiletter control sequences out of 15000+200000
+ 29281 words of font info for 66 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 38i,17n,32p,277b,362s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texm
+f-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/texmf-dist/fonts/typ
+e1/urw/courier/ucrr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/t
+imes/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on lyrics-to-audio-FMA_extendend_abstract.pdf (3 pages, 83963 by
+tes).
+PDF statistics:
+ 50 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

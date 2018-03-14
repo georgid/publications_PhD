@@ -1,0 +1,40 @@
+@article{journals/jiis/MellodyBW03,
+  added-at = {2011-05-26T00:00:00.000+0200},
+  author = {Mellody, Maureen and Bartsch, Mark A. and Wakefield, Gregory H.},
+  biburl = {http://www.bibsonomy.org/bibtex/2a6837c9b19a096a3d3070b5a4be09eaa/dblp},
+  ee = {http://dx.doi.org/10.1023/A:1023501817044},
+  interhash = {ac0279c628ceeea730199a99ce492c1c},
+  intrahash = {a6837c9b19a096a3d3070b5a4be09eaa},
+  journal = {J. Intell. Inf. Syst.},
+  keywords = {dblp},
+  number = 1,
+  pages = {35-52},
+  timestamp = {2011-05-26T00:00:00.000+0200},
+  title = {Analysis of Vowels in Sung Queries for a Music Information Retrieval System.},
+  url = {http://dblp.uni-trier.de/db/journals/jiis/jiis21.html#MellodyBW03},
+  volume = 21,
+  year = 2003,
+  review = { For vocals in singing queries. Defines similarity metric between vocals. Makes clustering of the vowels intovoiwel groups. The feature used is the weights of harmonics, The clusters are 4: non-vowels, back, middle and front vowels. (e.g. more the first formant is important)  They are sorted by the second spectral moment of the mean cluster vector (to me it seems it is s.th. like the spectral flatness)   }
+}
+
+
+@article{
+athor= {Harald},
+title = {Diplom thesis},
+review{my observation from figure 2.8: the first formant correlates to backness. Increasing the frequency of the first vowel makes it more frontal. Second formant correlates to Openness> Increasing the frequency makes it more closed. 
+
+
+Singers's formant - Also, higher partials are propagated more forward,
+than backwards or sideways.
+  }
+
+}
+
+@article{
+athor= {Mesaros},
+title = {Phd thesis},
+
+review = {formants: First and second are for identifying the vowel, third is the form of the lips, fourth and fifth depend on the the vocal cavity (and are therefore singer-specific)   }
+
+}
+

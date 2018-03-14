@@ -1,0 +1,1152 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 10page%
+\topmargin 10theight%
+\rightmargin 10page%
+\bottommargin 10pheight%
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Analyzing the connection between lyrics and singing voice in Ottoman tradition
+\end_layout
+
+\begin_layout Author
+Georgi Dzhambazov
+\end_layout
+
+\begin_layout TitleGraphic
+\begin_inset Graphics
+	filename oud_turkey1
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Who am I? 
+\end_layout
+
+\begin_layout Itemize
+Query-by-singing
+\end_layout
+
+\begin_layout Itemize
+Speech processing
+\end_layout
+
+\begin_layout Itemize
+Automatic detection of sentence boundaries
+\end_layout
+
+\begin_layout Itemize
+Rhythmic patterns
+\end_layout
+
+\begin_layout BeginFrame
+Outline
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+Lyrics-to-audio alignment
+\end_layout
+
+\begin_layout Itemize
+Improving the alignment
+\end_layout
+
+\begin_layout Itemize
+Search methods
+\end_layout
+
+\begin_layout BeginFrame
+Introduction to lyrics-to-audio alignment
+\end_layout
+
+\begin_layout Description
+Goal: automatic synchronization between audio and lyrics
+\end_layout
+
+\begin_layout Itemize
+Input: lyrics and audio 
+\end_layout
+
+\begin_layout Itemize
+Output: starting timestamps of words 
+\begin_inset Graphics
+	filename jo fig copied from paper-1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Description
+Challenge: polyphonic music more complex than unaccompanied singing voice
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the problem is mitigated since makam chants are heterophonic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Challenge: detect segments with singing voice 
+\end_layout
+
+\begin_layout BeginFrame
+How lyrics-to-audio alignment works
+\end_layout
+
+\begin_layout Standard
+Forced Alignment Method 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+based on phoneme recognition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+expand textual lyrics to a sequence of phonemes
+\end_layout
+
+\begin_layout Itemize
+train phoneme models (HMM) on a big corpus of speech data
+\end_layout
+
+\begin_layout Itemize
+adapt models to singing using small singing voice corpus 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+because singing voice has more dynamic acoustic characteristics than speech
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+extract features (MFCCs) from the audio input
+\end_layout
+
+\begin_layout Itemize
+decode most probable sequence of phoneme states using Viterbi decoding
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename jo fig copied from paper-2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Model Adaptation
+\end_layout
+
+\begin_layout Standard
+IDEA: transform the acoustic space of speaker-independent phoneme models
+ towards a particular speaker 
+\end_layout
+
+\begin_layout Standard
+Adaptation approaches:
+\end_layout
+
+\begin_layout Itemize
+Maximum likelihood linear regression (MLLR) - shift the means of all models
+ in the same way 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mesaros2008automatic"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Maximum a posteriori (MAP) - transforms each model in a different way; based
+ on prior knowledge about model parameters
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+prior knowledge from statistics about each phoneme 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+why this adaptation? 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Vowels and consonants have different acoustic characteristics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Vocals carry the melody and thus are sung with more variation.
+ Especially true for singers of traditional chants - more embellishments
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Outline
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Lyrics-to-audio alignment
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+Improving the alignment
+\end_layout
+
+\begin_layout Itemize
+Search methods
+\end_layout
+
+\begin_layout BeginFrame
+Incorporation of musical cues into the model
+\end_layout
+
+\begin_layout Standard
+Combine
+\end_layout
+
+\begin_layout Itemize
+Note model of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "orio2001score"
+
+\end_inset
+
+ : phases of amplitude envelope represented as a sequence of HMM states
+ (attack, sustain and rest)
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Itemize
+Phoneme models
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+use mapping in score between syllable and a note
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename jo fig notes.png
+	lyxscale 20
+	scale 26
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+models constructed based on scores
+\end_layout
+
+\begin_layout Itemize
+Why this model? 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+allows tracking vocal improvisation/ornamentation 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+useful for analysis: How singers utilize temporal variation of lyrics as
+ a mean of expressiveness
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Outline
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Lyrics-to-audio alignment
+\end_layout
+
+\begin_layout Itemize
+Improving the alignment
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+Search methods
+\end_layout
+
+\begin_layout BeginFrame
+Search by lyrics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+explain example use case
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+this is the classical lyrics search
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/joro/Documents/Phd/UPF/Jo_fig1.png
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Enumerate
+Preprocessing: Lyrics-to-audio alignment; Timestamps and acoustic features
+ - stored for each song 
+\end_layout
+
+\begin_layout Enumerate
+The user selects as query a short audio excerpt 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+melodic phrase
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+lyrics shown based on alignment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The system returns all occurrences of same text from a database of target
+ songs; search criteria is text only
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the system performs classical textual search
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+for example the targets 1 and 15.
+ audio part shown based on alignment
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Sort by articulation for same lyrics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+example use case: Imagine you are the musicologist Tom.
+ He wants to find all singers that sing using articulation in the tradition
+ of western Turkey.
+ He selects as a query a melody from a famous singer Sinan from west Turkey.
+ He is not interested whether it is same song.
+ Lyrics are same, but articulation differs.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+use case: Lyrics are same, sort by similar articulation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename jo fig4.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Enumerate
+Preprocessing: Lyrics-to-audio alignment.Timestamps and acoustic features
+ - stored for each song
+\end_layout
+
+\begin_layout Enumerate
+The user selects as query a short audio excerpt 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+- melodic phrase.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+lyrics shown based on alignment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The system returns all occurrences of same text from a database of target
+ songs
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+for example the targets 1 and 15.
+ audio part shown based on alignment
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+The system takes results form step 3.
+ Compares based on similarity of articulation to query.
+ Sorts results.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Sort: Dynamic Time Warping (DTW)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename jo fig5_DTW.png
+	scale 110
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Why DTW?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+finds optimal match between feature vector series in non-linear way.
+ Singers stretch sounds non-linearly
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+NOTE: features are already extracted and stored 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Do not forget that the features are stored after the lyrics-to-audio alignment.
+ No need to extract them again
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Sort: vowel features
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+we are interested only in vowels
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Why only vowels? 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+can carry melodic tones and thus have higher importance for articulation
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Vowel Trapezium
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename IPA_vowel_trapezium_from_wiki.svg.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+space where vowels are organized as points based on the phonetic characteristics.
+ e.g.
+ how open is the vocal tract.
+ The more closer two points, the more similar their are.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Sort: vowel features (cntd)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Enumerate
+learn model for vowels in turkish language 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(can be for given geographical region or tradition)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+sieve out vowels using alignment timestamps
+\end_layout
+
+\begin_layout Enumerate
+transform MFCCs into vector of likelihoods for the 6 vowels
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+for example for a vowel u and o have similar feature vector
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Why modify the timbral features? 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+search in huge databases poses the challenge of fast computation.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+smaller dimensionality ensures faster comparison
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Sort by articulation and melody for given lyrics
+\end_layout
+
+\begin_layout Standard
+NOTE: Search by articulation can be combined with other features
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+use case: Imagine you are again Tom and search for singers with similar
+ articulation to Sinan for same text.
+ you want to consider only same song, he considers only same rhythm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Setting: combine articulation (similar geographical region) with 
+\end_layout
+
+\begin_layout Itemize
+melody (same song, which means same 
+\emph on
+makam
+\emph default
+) 
+\end_layout
+
+\begin_layout Itemize
+rhythm (same 
+\emph on
+usul
+\emph default
+)
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+LEt us imagine the same search setting and take melody or respectively the
+ features for pitch 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Enumerate
+Preprocessing: Lyrics-to-audio alignment.Timestamps and acoustic features
+ - stored for each song
+\end_layout
+
+\begin_layout Enumerate
+The user selects as query a short audio excerpt 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+- melodic phrase.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+lyrics shown based on alignment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The system returns all occurrences of same text from a database of target
+ songs
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+for example the targets 1 and 15.
+ audio part shown based on alignment
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+The user selects some search criteria: e.g.
+ articulation, melodic contour, rhythmic pattern
+\end_layout
+
+\begin_layout Enumerate
+The system takes results form step 3.
+ Compares based on similarity to query of selected aspects.
+ Sorts results.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Sort: distance metric
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+to apply dtw we need distance metric for 2 features 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Definition
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $F_{a}:$
+\end_inset
+
+ feature vector for articulation
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $F_{p}:$
+\end_inset
+
+ feature vector for pitch 
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+dmat(a,b) 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+: mathematical distance metric
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $w_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{p}$
+\end_inset
+
+: weights for pitch and articulation feature
+\end_layout
+
+\begin_layout Definition
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $frameDist(F_{query},F_{target})=w_{a}*dmat(F_{query,a},F_{target,a})+w_{p}*dmat(F_{query,p},F_{target,p})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Why weighting?
+\end_layout
+
+\begin_layout Itemize
+emphasize on one of the features
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Euclidian distance gives most similar articulation characteristics in the
+ vowel space.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Questions and answers
+\end_layout
+
+\begin_layout Standard
+Thank you for your attention!
+\end_layout
+
+\begin_layout Quotation
+References
+\end_layout
+
+\begin_layout Quotation
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "proposal_initial"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

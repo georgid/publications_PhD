@@ -1,0 +1,76 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 13.668956916099773 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phrases" 
+        xmin = 0 
+        xmax = 13.668956916099773 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.6181706020472006 
+            text = "" 
+        intervals [2]:
+            xmin = 0.6181706020472006 
+            xmax = 3.663911800570605 
+            text = "doyamam" 
+        intervals [3]:
+            xmin = 3.663911800570605 
+            xmax = 7.019220137304585 
+            text = " OmrUme ben " 
+        intervals [4]:
+            xmin = 7.019220137304585 
+            xmax = 11.323201962103232 
+            text = "kalbini Calsam " 
+        intervals [5]:
+            xmin = 11.323201962103232 
+            xmax = 13.150646681217275 
+            text = "da senin" 
+        intervals [6]:
+            xmin = 13.150646681217275 
+            xmax = 13.668956916099773 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 13.668956916099773 
+        intervals: size = 8 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.47 
+            text = "" 
+        intervals [2]:
+            xmin = 0.47 
+            xmax = 4.52 
+            text = "doyamam" 
+        intervals [3]:
+            xmin = 4.52 
+            xmax = 5.11 
+            text = "OmrUme" 
+        intervals [4]:
+            xmin = 5.11 
+            xmax = 5.26 
+            text = "ben" 
+        intervals [5]:
+            xmin = 5.26 
+            xmax = 8.61 
+            text = "kalbini" 
+        intervals [6]:
+            xmin = 8.61 
+            xmax = 11.28 
+            text = "Calsam" 
+        intervals [7]:
+            xmin = 11.28 
+            xmax = 12.96 
+            text = "da" 
+        intervals [8]:
+            xmin = 12.96 
+            xmax = 13.668956916099773 
+            text = "senin" 

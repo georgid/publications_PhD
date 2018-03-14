@@ -1,0 +1,794 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{movie15}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 10page%
+\topmargin 10theight%
+\rightmargin 10page%
+\bottommargin 10pheight%
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Automatic alignment between lyrics and singing voice for classical Turkish
+ songs / Otomatik icra-şarkı sözü eşleştirmesi
+\end_layout
+
+\begin_layout Author
+Georgi Dzhambazov
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+georgi.dzhambazov@upf.edu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout TitleGraphic
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50line%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../HMM_andLyrics_presentation_NavaRubin/mtg_logo.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50line%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../HMM_andLyrics_presentation_NavaRubin/CompMusic_logotoweb.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What is this talk about? / Bu konuşma ne hakkında?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Different musical representations: audio, score, lyrics / Farklı müzik gösteriml
+eri: ses, nota, söz
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(we present in compmusic).
+ How our research and tools can be useful for you 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Focus: connection between lyrics and audio / Odak: Sözler ve icra arasında
+ bağlantı
+\end_layout
+
+\begin_layout Itemize
+Automatic alignment between lyrics and audio/ Sözler ve kayıt arasında otomatik
+ hizalama
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+saves time / Zaman kazandırır
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classical art music tradition: şarkı form / Klasik sanat müziği geleneği:
+ şarkı formu
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why analyse lyrics? / Neden şarkı sözü analizi?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lyrics in şarkı have different interpretations / Şarkı sözlerinin farklı
+ yorumları mevcut
+\end_layout
+
+\begin_layout Itemize
+Listeners follow lyrics and melody in paralel / Dinleyiciler şarkı sözleri
+ ve melodiyi paralel takip ediyor
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\color red
+Lyrics-to-audio alignment: applications use cases / Söz-İcra uyumu: uygulama
+ senaryoları
+\end_layout
+
+\begin_layout Itemize
+Lyrics-to-audio alignment for şarkı form: Method / Yöntem
+\end_layout
+
+\begin_layout Itemize
+Demo / Sunum
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Use case 1: Automatic phrase-level highlighting / 1.
+ Senaryo: Otomatik vurgulama ifade seviyesi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+for karaoke / karaoke için
+\end_layout
+
+\begin_layout Itemize
+for learning to sing a song / Bir şarkı öğrenmek için
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+its is faster to jump between phrase by clicking it, not browsing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[ht]
+\backslash
+includemovie[poster,mouse=true]{10cm}{7.5cm}       {benSeni_musixMatch.mov}
+  
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Use case 2: Search by a word / 2.
+ Senaryo: Bir kelime ile arama
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Compare the articulation of different artists for a specific letter / Belirli
+ bir harf için farklı sanatçıların artikülasyonlarını karşılaştırın
+\end_layout
+
+\begin_layout Example
+gözünü
+\series bold
+N
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[ht]
+\backslash
+includemovie[poster,mouse=true]{8cm}{6cm}       {consonants_prolonged_koklasam_z
+eki_muren.mov}  
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Use case 3: Search by strophe / 3.
+ Senaryo: Söz satırı arama 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Compare different interpretations of the 
+\emph on
+nakarat / Farklı nakarat yorumlarını karşılaştırma
+\end_layout
+
+\begin_layout Standard
+=> Navigate faster in long recordings like 
+\emph on
+mevlevi ayin
+\emph default
+: / Mevlevi ayini gibi uzun kayıtları daha hızlı gezinme:
+\end_layout
+
+\begin_layout Example
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[ht]
+\backslash
+includemovie[poster,mouse=true]{7cm}{5cm}       {olmaz_nakarats_diff_melody.mov}
+  
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+well, you can navigate to the relevant part by hand, right? but imagine
+ mevlevi ayin : the sections are played in not the same order as in the
+ score.
+ So lyrics-driven navigation saves time to browse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Use case 4: Sort by articulation / 4.
+ Senaryo: Artikülasyona göre sıralama
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Find phrases with similar articulation / Benzer artikülasyonu içeren cümleleri
+ bulma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+( lyrics are not so important - could be a not complete phrase )
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/joro/Documents/Phd/UPF/papers/Jo_fig1.png
+	display false
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\color black
+Lyrics-to-audio alignment: applications use cases / Söz-İcra uyumu: uygulama
+ senaryoları
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+Lyrics-to-audio alignment for şarkı form: Method / Yöntem
+\end_layout
+
+\begin_layout Itemize
+Demo / Sunum
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Method overview / Yönteme genel bakış
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename Alignment_no_synthesis_with_pics.png
+	lyxscale 50
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alignment: closer look / Hizalama: Daha yakından bakış
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Align 
+\emph on
+acoustic features
+\emph default
+ and
+\emph on
+ letters / Akustik özellikleri ve mektuplar hizalayın
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../HMM_andLyrics_presentation_journal_club/lyricsAndWaveform_withDetails_2.png
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\color black
+Lyrics-to-audio alignment: applications use cases / Söz-İcra uyumu: uygulama
+ senaryoları
+\end_layout
+
+\begin_layout Itemize
+Lyrics-to-audio alignment for şarkı form: Method / Yöntem
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+Demo / Sunum
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Demo / Sunum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[ht]
+\backslash
+includemovie[poster,mouse=true]{10cm}{7.5cm}       {bakmiyor_example_alignemnt.mov
+}  
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion / Sonuçlar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Automatic alignment saves time / Otomatik hizalama zaman kazandırır
+\end_layout
+
+\begin_layout Itemize
+Questions / Önemli sorular
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+how our tools can be useful for your work? / Bu araçlar sizin için nasıl
+ faydalı olabilir?
+\end_layout
+
+\begin_layout Itemize
+may you help us to do manual annotation of audio? / Elle eşleme yaparak
+ bize yardımcı olabilir misiniz?
+\end_layout
+
+\begin_layout Itemize
+we collect data: may you sing for us? / Veri topluyoruz: Şarkı söyleyerek
+ bize katkıda bulunabilir misiniz?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+http://dunya.compmusic.upf.edu/makamplayer/
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Contacts / İletişim
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Georgi Dzhambazov
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+georgi.dzhambazov@upf.edu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

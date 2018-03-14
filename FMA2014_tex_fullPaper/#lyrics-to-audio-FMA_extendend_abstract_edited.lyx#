@@ -1,0 +1,539 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+% -----------------------------------------------
+% Template for FMA2014
+% (based on ISMIR 2010 Template)
+% -----------------------------------------------
+%
+% To compile run:
+% pdflatex fma2014template.tex
+% bibtex fma2014template
+% pdflatex fma2014template.tex (probably twice)
+%
+
+
+\usepackage{fma2014}
+
+% Title.
+% ------
+\title{Score-aided lyrics to audio alignment in ottoman recordings}
+
+% Single address
+% To use with only one author or several with the _same address_
+% ---------------
+%\oneauthor
+% {Author}
+% {Affiliation \\ {\tt {author}@fma.edu}}
+%
+\oneauthor
+ {Author1, Author2}
+ {Affiliation \\ {\tt \{author1,author2\}@fma.edu}}
+%
+% Two addresses
+% --------------
+%\twoauthors
+%  {First author, Second Author} {Affiliation1 \\ {\tt author1@fma.edu, author2@afm.edu}}
+%  {Third author} {Affiliation2 \\ {\tt author3@fma.edu}}
+%
+% Three addresses
+% --------------
+%\threeauthors
+%  {First author} {Affiliation1 \\ {\tt author1@fma.edu}}
+%  {Second author} {Affiliation2 \\ {\tt author2@fma.edu}}
+%  {Third author} {Affiliation3 \\ {\tt author3@fma.edu}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Motivation
+\end_layout
+
+\begin_layout Standard
+Lyrics are one of the most important musical aspects.
+ More specifically, the lyrics of sarki tell a story from the ottoman folklore
+ and help create impression of the song.
+ When a performance is heard, most listeners will follow the lyrics of the
+ main vocal melody.
+ In this perspective the automatic synchronisation between lyrics and music
+ poses a used-demanded research task.
+ It is applicable in use cases including among others karaoke, mood detection
+ or for the automatic generation of music videos.
+ Up to now, the synchronisation between lyrics and performances from the
+ Ottoman music tradition has not been addressed.
+\end_layout
+
+\begin_layout Subsection
+Description of peculiarities of Ottoman music
+\end_layout
+
+\begin_layout Standard
+Most classical songs in the sarki form evidence clear structural parts including
+ aranagme (instrumental introduction), mezim (verse) and nakarat (refrain).
+ Describe sarki form more.
+\end_layout
+
+\begin_layout Section
+Related work
+\end_layout
+
+\begin_layout Standard
+To date most of the studies of singing voice are focused on western polyphonic
+ popular music.
+ Most of the approaches to the automatic lyrics-to-audio alignment exploit
+ phonetic acoustic features.
+\end_layout
+
+\begin_layout Standard
+An example such system for Japanese popular music 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fujihara2011lyricsynchronizer"
+
+\end_inset
+
+ relies on a forced alignemnt scheme.
+ Since this technique was originally developed to carry the alignment between
+ clean speech and text, accompanying instruments and non-vocal sections
+ deteriorate the alignement accuracy.
+ To address this, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fujihara2011lyricsynchronizer"
+
+\end_inset
+
+ performs several preprocessing steps of the vocal line: Firstly the waveform
+ of the predominant melody is segregated from the polyphonic signal and
+ then classified into vocal and non-vocal sections.
+ Lastly, the alignment is run using phoneteic features extracted from the
+ vocal-only signal.
+\end_layout
+
+\begin_layout Standard
+A diametrically different approach is to deploy external information sources.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "muller2007lyrics"
+
+\end_inset
+
+ uses MIDI files, which are manually synchronised to lyrics.
+ By perfroming mapping of timestamps between an audio recording and a MIDI
+ version the composition, lyrics are implicitly aligned to the audio.
+\end_layout
+
+\begin_layout Section
+Method
+\end_layout
+
+\begin_layout Standard
+In this work we propose to combine advantages of these two approaches: We
+ make use of a modeling scheme based on phonetic features.
+ Similar to [Hiromasa] we train a phonetic recognizer, where each phoneme
+ is a assigned a hidden Markov model (HMM).
+ Additionally, we utilize musical scores, in which sections are labeled.
+ Songs are segmented into structural parts through an external module, which
+ links sections from the score to anchors in the audio [Sertan].
+ Using a Viterbi forced alignment, the system aligns in a non-linear way
+ the extracted phonetic features to phoneme network of trained HMMs.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+TODO: (what is the result: timestamps)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure one gives an overview of the steps of alignemnt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide true
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../FMA2014_tex_template/Training.eps
+	width 7.49cm
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hskip
+\end_layout
+
+\end_inset
+
+1.5cm
+\begin_inset Graphics
+	filename ../FMA2014_tex_template/Alignment.eps
+	width 7.49cm
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Figure captions should be placed below the figure.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Training
+\end_layout
+
+\begin_layout Standard
+In the abscence of annotated data of singing phonemes, we train phoneme
+ models on a big corpus of annotated turkish speech.
+ Later, we adapt of speech models to match the characteristics of clean
+ singing voice using a small singing corpus (see fig 1).
+\end_layout
+
+\begin_layout Standard
+How many gaussians? and 12-component MFCCs are extracted.
+\end_layout
+
+\begin_layout Subsection
+Adaptation
+\end_layout
+
+\begin_layout Standard
+Adaptation accounts for the more dynamic acoustic characteristics of sung
+ vocals compared to speech.
+ For example, the fluctuation of fundamental frequency (F0) and loudness
+ for a given vocal in singing vary more than in speech sounds.
+\end_layout
+
+\begin_layout Standard
+It is an approch for speaker adaptation.
+ The idea is to transform the acoustic space of speaker-independent phoneme
+ models towards the acoustic characteristics of a particular speaker.
+ [Mesaros] has proposed instead of speaker-data to adapt the speech model
+ to singing-voice audio using Maximum likelihood linear regression (MLLR).
+ The MLLR transform - applied as well in this work - shifts in a linear
+ way the mean components of the Gaussian mixtures of the speech model.
+ This ensures that each state of the adapted HMMs is more likely to generate
+ the corresponding state of singing audio.
+\end_layout
+
+\begin_layout Subsection
+Section Linking
+\end_layout
+
+\begin_layout Standard
+Research has shown that running alignment on fragmented segments of a piece
+ leads to a more accurate results rather than running it on the whole song
+ [ref].
+ Thus a necessary step to perform alignment is the segmentation of audio
+ into vocal-containing segments.
+ In the sarki form each vocal segment is associated with a section (e.g.
+ nakarat).
+ A further challenge for the alignment is that typically a given performances
+ of a sarki tend to have repetitions of whole sections.
+ These repetitions are not indicated in the score.
+ Thus for each audio recording, apriori to alignment, we utilize an algorithm
+ for detecting structural segments.
+\end_layout
+
+\begin_layout Standard
+The method [ref] takes as input the score of a piece and an audio recording
+ of the same piece.
+ (see fig 1) The scores are encoded in the machine-readable symbTr format
+ [ref].
+ The starting and ending points of the sections are explicitly marked in
+ the score.
+ The method links the sections in the score to the corresponding parts in
+ the audio, thus creating timestamps that mark the beginning and ending
+ of each section segment.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% It generates a synthetic pitch contour from the score, extracts main
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% pitch contour from the audio and matches the two melodic representations.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Alignment
+\end_layout
+
+\begin_layout Standard
+To each segmented vocal section we assign the corresponding lyrical strophe
+ automatically, because lyrics are present parallel to melody in the score.
+ After section detection a source separation step divides the audio into
+ singing voice and accompanying instruments.
+ The source separation algorithm applied is [ref].
+ To reduce the negative influence of accompanying instruments, MFCCs are
+ extracted from the segregated vocal line.
+ (Fig 1).
+\end_layout
+
+\begin_layout Standard
+The words from the lyrics are expanded to phonemes based on grapheme-to-phoneme
+ rules for Turkish.
+ [Table 1 of SALOR].
+ Then the HMMs are concatenated into a phoneme network.
+ An optional silent pause model, inserted at the end of each word, allows
+ to accomodate non-vocal breaks.
+ These are characteristic for ends of phrases in classical turkish chants.
+ At the end the forced alignemtn is applied.
+\end_layout
+
+\begin_layout Section
+Experimental setup
+\end_layout
+
+\begin_layout Standard
+Training of the model, adaptation and the alignment is done using the HTK.
+\end_layout
+
+\begin_layout Subsection
+Data
+\end_layout
+
+\begin_layout Standard
+METU corpus.
+ here reference to METU corpus.
+ number of hours of speech.
+\end_layout
+
+\begin_layout Standard
+The adaptation corpus consists of 10 acapella recordings from turkish singers.
+ The adaptation data (see fig 1) is annotated on phoneme-level which allows
+ an model reestimation in a supervised mode.
+ NOTE: vocals are sung with more embellishments.
+\end_layout
+
+\begin_layout Subsection
+Evaluation method
+\end_layout
+
+\begin_layout Standard
+Evaluation is done on word-level
+\end_layout
+
+\begin_layout Standard
+diame
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "JabRefLyrics2Audio,JabRefCompMusicNon-Lyrics"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Reference sheet at: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/natbib/n
+atnotes.pdf
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+bibliography{fma2014bibliography}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

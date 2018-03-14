@@ -1,0 +1,186 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 8.473696145124716 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phrases" 
+        xmin = 0 
+        xmax = 8.473696145124716 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.4089654703956094 
+            text = "gOzle " 
+        intervals [2]:
+            xmin = 1.4089654703956094 
+            xmax = 5.573712588955647 
+            text = "ri en son girecek" 
+        intervals [3]:
+            xmin = 5.573712588955647 
+            xmax = 8.473696145124716 
+            text = " kanIma" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 8.473696145124716 
+        intervals: size = 8 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.09 
+            text = "" 
+        intervals [2]:
+            xmin = 1.09 
+            xmax = 1.78 
+            text = "ri" 
+        intervals [3]:
+            xmin = 1.78 
+            xmax = 2.12 
+            text = "en" 
+        intervals [4]:
+            xmin = 2.12 
+            xmax = 2.43 
+            text = "son" 
+        intervals [5]:
+            xmin = 2.43 
+            xmax = 5.09 
+            text = "girecek" 
+        intervals [6]:
+            xmin = 5.09 
+            xmax = 5.21 
+            text = "sil" 
+        intervals [7]:
+            xmin = 5.21 
+            xmax = 8.24 
+            text = "kanIma" 
+        intervals [8]:
+            xmin = 8.24 
+            xmax = 8.473696145124716 
+            text = "sil" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 8.473696145124716 
+        intervals: size = 29 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.57 
+            text = "" 
+        intervals [2]:
+            xmin = 0.57 
+            xmax = 0.84 
+            text = "OE" 
+        intervals [3]:
+            xmin = 0.84 
+            xmax = 0.86 
+            text = "fric" 
+        intervals [4]:
+            xmin = 0.86 
+            xmax = 0.97 
+            text = "LL" 
+        intervals [5]:
+            xmin = 0.97 
+            xmax = 1.09 
+            text = "E" 
+        intervals [6]:
+            xmin = 1.09 
+            xmax = 1.48 
+            text = "RR" 
+        intervals [7]:
+            xmin = 1.48 
+            xmax = 1.75 
+            text = "IY" 
+        intervals [8]:
+            xmin = 1.75 
+            xmax = 1.78 
+            text = "sp" 
+        intervals [9]:
+            xmin = 1.78 
+            xmax = 2.09 
+            text = "E" 
+        intervals [10]:
+            xmin = 2.09 
+            xmax = 2.12 
+            text = "NN" 
+        intervals [11]:
+            xmin = 2.12 
+            xmax = 2.14 
+            text = "fric" 
+        intervals [12]:
+            xmin = 2.14 
+            xmax = 2.28 
+            text = "O" 
+        intervals [13]:
+            xmin = 2.28 
+            xmax = 2.43 
+            text = "NN" 
+        intervals [14]:
+            xmin = 2.43 
+            xmax = 2.66 
+            text = "GG" 
+        intervals [15]:
+            xmin = 2.66 
+            xmax = 4.07 
+            text = "IY" 
+        intervals [16]:
+            xmin = 4.07 
+            xmax = 4.81 
+            text = "RR" 
+        intervals [17]:
+            xmin = 4.81 
+            xmax = 4.98 
+            text = "E" 
+        intervals [18]:
+            xmin = 4.98 
+            xmax = 5.01 
+            text = "C" 
+        intervals [19]:
+            xmin = 5.01 
+            xmax = 5.04 
+            text = "E" 
+        intervals [20]:
+            xmin = 5.04 
+            xmax = 5.09 
+            text = "KK" 
+        intervals [21]:
+            xmin = 5.09 
+            xmax = 5.21 
+            text = "sil" 
+        intervals [22]:
+            xmin = 5.21 
+            xmax = 5.77 
+            text = "KK" 
+        intervals [23]:
+            xmin = 5.77 
+            xmax = 5.88 
+            text = "AA" 
+        intervals [24]:
+            xmin = 5.88 
+            xmax = 5.96 
+            text = "NN" 
+        intervals [25]:
+            xmin = 5.96 
+            xmax = 8.0799999 
+            text = "I" 
+        intervals [26]:
+            xmin = 8.0799999 
+            xmax = 8.1599999 
+            text = "M" 
+        intervals [27]:
+            xmin = 8.1599999 
+            xmax = 8.2399999 
+            text = "AA" 
+        intervals [28]:
+            xmin = 8.2399999 
+            xmax = 8.24 
+            text = "sp" 
+        intervals [29]:
+            xmin = 8.24 
+            xmax = 8.473696145124716 
+            text = "sil" 

@@ -1,0 +1,59 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Durrieu, Ozerov, F{\'e}votte, Richard \&
+  David}{Durrieu et~al.}{2009}]{durrieu2009main}
+Durrieu, J.-L., Ozerov, A., F{\'e}votte, C., Richard, G., \& David, B. (2009).
+\newblock Main instrument separation from stereophonic audio signals using a
+  source/filter model.
+\newblock In {\em European Signal Processing Conference (EUSIPCO), Glasgow,
+  Scotland}.
+
+\bibitem[\protect\citeauthoryear{Fujihara, Goto, Ogata \& Okuno}{Fujihara
+  et~al.}{2011}]{fujihara2011lyricsynchronizer}
+Fujihara, H., Goto, M., Ogata, J., \& Okuno, H.~G. (2011).
+\newblock Lyricsynchronizer: Automatic synchronization system between musical
+  audio signals and lyrics.
+\newblock {\em Selected Topics in Signal Processing, IEEE Journal of}, {\em
+  5\/}(6), 1252--1261.
+
+\bibitem[\protect\citeauthoryear{Karaosmano{\u{g}}lu}{Karaosmano{\u{g}}lu}{2012}]{karaosmanouglu2012turkish}
+Karaosmano{\u{g}}lu, M.~K. (2012).
+\newblock A turkish makam music symbolic database for music information
+  retrieval: Symbtr.
+\newblock {\em Proc. Int. Society for Music Information Retrieval (ISMIR)}.
+
+\bibitem[\protect\citeauthoryear{Mesaros \& Virtanen}{Mesaros \&
+  Virtanen}{2008}]{Mesaros96automaticalignment}
+Mesaros, A. \& Virtanen, T. (2008).
+\newblock Automatic alignment of music audio and lyrics.
+\newblock In {\em in Proceedings of the 11th Int. Conference on Digital Audio
+  Effects (DAFx-08}.
+
+\bibitem[\protect\citeauthoryear{M{\"u}ller, Kurth, Damm, Fremerey \&
+  Clausen}{M{\"u}ller et~al.}{2007}]{muller2007lyrics}
+M{\"u}ller, M., Kurth, F., Damm, D., Fremerey, C., \& Clausen, M. (2007).
+\newblock Lyrics-based audio retrieval and multimodal navigation in music
+  collections.
+\newblock In {\em Research and Advanced Technology for Digital Libraries}
+  (pp.\ 112--123). Springer.
+
+\bibitem[\protect\citeauthoryear{{\c S}ent{\"u}rk, Holzapfel \& Serra}{{\c
+  S}ent{\"u}rk et~al.}{ress}]{sertanSectionLinking2014}
+{\c S}ent{\"u}rk, S., Holzapfel, A., \& Serra, X. (In Press).
+\newblock Linking scores and audio recordings in makam music of turkey.
+\newblock {\em Journal of New Music Research}.
+
+\bibitem[\protect\citeauthoryear{Serra}{Serra}{2011}]{CompMusic2276}
+Serra, X. (2011).
+\newblock A multicultural approach in music information research.
+\newblock In {\em Int. Soc. for Music Information Retrieval Conf. (ISMIR)},
+  (pp.\ 151--156)., Miami, Florida (USA).
+
+\bibitem[\protect\citeauthoryear{Özgül Salor, Pellom, Ciloglu \&
+  Demirekler}{Özgül Salor et~al.}{2007}]{Salor2007580}
+Özgül Salor, Pellom, B.~L., Ciloglu, T., \& Demirekler, M. (2007).
+\newblock Turkish speech corpora and recognition tools developed by porting
+  sonic: Towards multilingual speech recognition.
+\newblock {\em Computer Speech and Language}, {\em 21\/}(4), 580 -- 593.
+
+\end{thebibliography}

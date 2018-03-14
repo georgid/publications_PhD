@@ -1,0 +1,80 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 12.701315192743763 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phrases" 
+        xmin = 0 
+        xmax = 12.701315192743763 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7414336089590239 
+            text = "" 
+        intervals [2]:
+            xmin = 0.7414336089590239 
+            xmax = 2.7508093648953897 
+            text = "koklasan" 
+        intervals [3]:
+            xmin = 2.7508093648953897 
+            xmax = 3.293189765350316 
+            text = " " 
+        intervals [4]:
+            xmin = 3.293189765350316 
+            xmax = 5.824067916825679 
+            text = "saClarInI" 
+        intervals [5]:
+            xmin = 5.824067916825679 
+            xmax = 7.512866536691916 
+            text = "" 
+        intervals [6]:
+            xmin = 7.512866536691916 
+            xmax = 10.150006763711694 
+            text = "bu gece ta" 
+        intervals [7]:
+            xmin = 10.150006763711694 
+            xmax = 12.701315192743763 
+            text = "fecre kadar" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 12.701315192743763 
+        intervals: size = 8 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.98 
+            text = "" 
+        intervals [2]:
+            xmin = 0.98 
+            xmax = 10.08 
+            text = "saClarInI" 
+        intervals [3]:
+            xmin = 10.08 
+            xmax = 10.43 
+            text = "sil" 
+        intervals [4]:
+            xmin = 10.43 
+            xmax = 10.61 
+            text = "bu" 
+        intervals [5]:
+            xmin = 10.61 
+            xmax = 11.19 
+            text = "gece" 
+        intervals [6]:
+            xmin = 11.19 
+            xmax = 11.45 
+            text = "ta" 
+        intervals [7]:
+            xmin = 11.45 
+            xmax = 11.67 
+            text = "fecre" 
+        intervals [8]:
+            xmin = 11.67 
+            xmax = 12.701315192743763 
+            text = "kadar" 

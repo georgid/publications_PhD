@@ -1,0 +1,234 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 8.62111111111111 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phrases" 
+        xmin = 0 
+        xmax = 8.62111111111111 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.11905926515757637 
+            text = "" 
+        intervals [2]:
+            xmin = 0.11905926515757637 
+            xmax = 2.4368213010200206 
+            text = "kumru " 
+        intervals [3]:
+            xmin = 2.4368213010200206 
+            xmax = 4.716793738471663 
+            text = "gibi a " 
+        intervals [4]:
+            xmin = 4.716793738471663 
+            xmax = 5.340322112249876 
+            text = "canIm " 
+        intervals [5]:
+            xmin = 5.340322112249876 
+            xmax = 7.727365078532121 
+            text = "seviSelim can " 
+        intervals [6]:
+            xmin = 7.727365078532121 
+            xmax = 8.62111111111111 
+            text = "cana" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 8.62111111111111 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.11 
+            text = "" 
+        intervals [2]:
+            xmin = 0.11 
+            xmax = 2.42 
+            text = "kumru" 
+        intervals [3]:
+            xmin = 2.42 
+            xmax = 4.23 
+            text = "gibi" 
+        intervals [4]:
+            xmin = 4.23 
+            xmax = 4.73 
+            text = "a" 
+        intervals [5]:
+            xmin = 4.73 
+            xmax = 5.34 
+            text = "canIm" 
+        intervals [6]:
+            xmin = 5.34 
+            xmax = 6.38 
+            text = "seviSelim" 
+        intervals [7]:
+            xmin = 6.38 
+            xmax = 7.11 
+            text = "can" 
+        intervals [8]:
+            xmin = 7.11 
+            xmax = 7.26 
+            text = "sil" 
+        intervals [9]:
+            xmin = 7.26 
+            xmax = 8.43 
+            text = "cana" 
+        intervals [10]:
+            xmin = 8.43 
+            xmax = 8.62111111111111 
+            text = "sil" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "aligned" 
+        xmin = 0 
+        xmax = 8.62111111111111 
+        intervals: size = 36 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.11 
+            text = "" 
+        intervals [2]:
+            xmin = 0.11 
+            xmax = 0.14 
+            text = "KK" 
+        intervals [3]:
+            xmin = 0.14 
+            xmax = 1.28 
+            text = "U" 
+        intervals [4]:
+            xmin = 1.28 
+            xmax = 1.31 
+            text = "M" 
+        intervals [5]:
+            xmin = 1.31 
+            xmax = 1.89 
+            text = "RR" 
+        intervals [6]:
+            xmin = 1.89 
+            xmax = 2.4199999 
+            text = "U" 
+        intervals [7]:
+            xmin = 2.4199999 
+            xmax = 2.42 
+            text = "sp" 
+        intervals [8]:
+            xmin = 2.42 
+            xmax = 2.5 
+            text = "GG" 
+        intervals [9]:
+            xmin = 2.5 
+            xmax = 2.7 
+            text = "IY" 
+        intervals [10]:
+            xmin = 2.7 
+            xmax = 2.73 
+            text = "B" 
+        intervals [11]:
+            xmin = 2.73 
+            xmax = 4.23 
+            text = "IY" 
+        intervals [12]:
+            xmin = 4.23 
+            xmax = 4.73 
+            text = "AA" 
+        intervals [13]:
+            xmin = 4.73 
+            xmax = 4.78 
+            text = "C" 
+        intervals [14]:
+            xmin = 4.78 
+            xmax = 4.95 
+            text = "AA" 
+        intervals [15]:
+            xmin = 4.95 
+            xmax = 5.24 
+            text = "NN" 
+        intervals [16]:
+            xmin = 5.24 
+            xmax = 5.29 
+            text = "I" 
+        intervals [17]:
+            xmin = 5.29 
+            xmax = 5.34 
+            text = "M" 
+        intervals [18]:
+            xmin = 5.34 
+            xmax = 5.36 
+            text = "fric" 
+        intervals [19]:
+            xmin = 5.36 
+            xmax = 5.52 
+            text = "E" 
+        intervals [20]:
+            xmin = 5.52 
+            xmax = 5.62 
+            text = "VV" 
+        intervals [21]:
+            xmin = 5.62 
+            xmax = 5.87 
+            text = "IY" 
+        intervals [22]:
+            xmin = 5.87 
+            xmax = 5.9 
+            text = "fric" 
+        intervals [23]:
+            xmin = 5.9 
+            xmax = 6.15 
+            text = "E" 
+        intervals [24]:
+            xmin = 6.15 
+            xmax = 6.2 
+            text = "LL" 
+        intervals [25]:
+            xmin = 6.2 
+            xmax = 6.32 
+            text = "IY" 
+        intervals [26]:
+            xmin = 6.32 
+            xmax = 6.38 
+            text = "M" 
+        intervals [27]:
+            xmin = 6.38 
+            xmax = 6.45 
+            text = "C" 
+        intervals [28]:
+            xmin = 6.45 
+            xmax = 6.74 
+            text = "AA" 
+        intervals [29]:
+            xmin = 6.74 
+            xmax = 6.97 
+            text = "NN" 
+        intervals [30]:
+            xmin = 6.97 
+            xmax = 7.11 
+            text = "sp" 
+        intervals [31]:
+            xmin = 7.11 
+            xmax = 7.26 
+            text = "sil" 
+        intervals [32]:
+            xmin = 7.26 
+            xmax = 7.29 
+            text = "C" 
+        intervals [33]:
+            xmin = 7.29 
+            xmax = 7.48 
+            text = "AA" 
+        intervals [34]:
+            xmin = 7.48 
+            xmax = 7.77 
+            text = "NN" 
+        intervals [35]:
+            xmin = 7.77 
+            xmax = 8.43 
+            text = "AA" 
+        intervals [36]:
+            xmin = 8.43 
+            xmax = 8.62111111111111 
+            text = "sil" 
